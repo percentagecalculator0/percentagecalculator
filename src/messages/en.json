@@ -1,13 +1,22 @@
 {
   "meta": {
-    "locale": "en",
-    "dir": "ltr",
     "home": {
       "title": "Percentage Increase Calculator – Free, With Steps",
       "description": "Find the percentage increase between two numbers, or decrease, change, difference and reverse percentage. Free calculator with the formula and step-by-step working."
     }
   },
-  "site": { "name": "Percentage Increase Calculator", "skip": "Skip to calculator", "home": "Home", "ad": "Advertisement" },
+  "site": {
+    "name": "Percentage Increase Calculator",
+    "skip": "Skip to calculator",
+    "home": "Home",
+    "ad": "Advertisement",
+    "language": "Language",
+    "banner": {
+      "text": "View this page in {language}?",
+      "go": "Switch",
+      "dismiss": "No thanks"
+    }
+  },
   "calc": {
     "heading": "Percentage calculator",
     "modeLabel": "What do you want to calculate?",
@@ -21,15 +30,41 @@
       "difference": "Percentage difference between two numbers"
     },
     "fields": {
-      "increase": ["Old value", "New value"],
-      "decrease": ["Old value", "New value"],
-      "increaseBy": ["Number", "Increase by (%)"],
-      "decreaseBy": ["Number", "Decrease by (%)"],
-      "reverseIncrease": ["Value after the increase", "Increase that was applied (%)"],
-      "reverseDecrease": ["Value after the decrease", "Decrease that was applied (%)"],
-      "difference": ["First number", "Second number"]
+      "increase": [
+        "Old value",
+        "New value"
+      ],
+      "decrease": [
+        "Old value",
+        "New value"
+      ],
+      "increaseBy": [
+        "Number",
+        "Increase by (%)"
+      ],
+      "decreaseBy": [
+        "Number",
+        "Decrease by (%)"
+      ],
+      "reverseIncrease": [
+        "Value after the increase",
+        "Increase that was applied (%)"
+      ],
+      "reverseDecrease": [
+        "Value after the decrease",
+        "Decrease that was applied (%)"
+      ],
+      "difference": [
+        "First number",
+        "Second number"
+      ]
     },
-    "buttons": { "reset": "Reset", "copy": "Copy result", "copied": "Copied", "copyFailed": "Copy not available. Select the result and copy it by hand." },
+    "buttons": {
+      "reset": "Reset",
+      "copy": "Copy result",
+      "copied": "Copied",
+      "copyFailed": "Copy not available. Select the result and copy it by hand."
+    },
     "hint": "Enter both numbers to see the result, the formula and the steps.",
     "resultLabel": "Result",
     "formulaLabel": "Formula",
@@ -127,27 +162,72 @@
     ],
     "examplesTitle": "Worked examples",
     "examples": [
-      { "title": "A price goes up", "body": "A pair of shoes costs $80 and the price rises to $100. The increase is $100 − $80 = $20. Then $20 ÷ $80 = 0.25, and 0.25 × 100 = 25%. The price went up by 25%." },
-      { "title": "A pay rise", "body": "Your salary goes from $40,000 to $44,000. The increase is $4,000. Then $4,000 ÷ $40,000 = 0.1, so the pay rise is 10%." },
-      { "title": "Website visitors", "body": "A blog had 1,200 visitors last month and 1,830 this month. The increase is 630. Then 630 ÷ 1,200 = 0.525, so traffic grew by 52.5%." },
-      { "title": "A decrease", "body": "A phone drops in price from $250 to $200. The change is $200 − $250 = −$50. Then −$50 ÷ $250 = −0.2, which is −20%. The price fell by 20%." },
-      { "title": "Increase a number by a percentage", "body": "To add 15% to 60, first find 15% of 60: 60 × 0.15 = 9. Then add it: 60 + 9 = 69. You can also do it in one step: 60 × 1.15 = 69." }
+      {
+        "title": "A price goes up",
+        "body": "A pair of shoes costs $80 and the price rises to $100. The increase is $100 − $80 = $20. Then $20 ÷ $80 = 0.25, and 0.25 × 100 = 25%. The price went up by 25%."
+      },
+      {
+        "title": "A pay rise",
+        "body": "Your salary goes from $40,000 to $44,000. The increase is $4,000. Then $4,000 ÷ $40,000 = 0.1, so the pay rise is 10%."
+      },
+      {
+        "title": "Website visitors",
+        "body": "A blog had 1,200 visitors last month and 1,830 this month. The increase is 630. Then 630 ÷ 1,200 = 0.525, so traffic grew by 52.5%."
+      },
+      {
+        "title": "A decrease",
+        "body": "A phone drops in price from $250 to $200. The change is $200 − $250 = −$50. Then −$50 ÷ $250 = −0.2, which is −20%. The price fell by 20%."
+      },
+      {
+        "title": "Increase a number by a percentage",
+        "body": "To add 15% to 60, first find 15% of 60: 60 × 0.15 = 9. Then add it: 60 + 9 = 69. You can also do it in one step: 60 × 1.15 = 69."
+      }
     ],
     "useTitle": "Where people use it",
     "uses": [
-      { "title": "Salary", "body": "Compare an old and a new salary to see the size of a raise." },
-      { "title": "Prices", "body": "Check how much a product, rent or a bill has gone up between two dates." },
-      { "title": "Marketing", "body": "Measure growth in visits, sign-ups or sales from one period to the next." },
-      { "title": "Growth", "body": "Track savings, population, weight or any figure that changes over time." }
+      {
+        "title": "Salary",
+        "body": "Compare an old and a new salary to see the size of a raise."
+      },
+      {
+        "title": "Prices",
+        "body": "Check how much a product, rent or a bill has gone up between two dates."
+      },
+      {
+        "title": "Marketing",
+        "body": "Measure growth in visits, sign-ups or sales from one period to the next."
+      },
+      {
+        "title": "Growth",
+        "body": "Track savings, population, weight or any figure that changes over time."
+      }
     ],
     "faqTitle": "Frequently asked questions",
     "faq": [
-      { "q": "How do I calculate percentage increase?", "a": "Subtract the old value from the new value, divide the result by the old value, then multiply by 100. For example, from 20 to 25: (25 − 20) ÷ 20 × 100 = 25%." },
-      { "q": "Can a percentage increase be more than 100%?", "a": "Yes. If a value more than doubles, the increase is above 100%. Going from 10 to 35 is an increase of 250%." },
-      { "q": "What if the old value is zero?", "a": "The percentage increase is undefined, because the formula divides by the old value and you cannot divide by zero. This calculator shows a message instead of a result." },
-      { "q": "Is a percentage increase the same as percentage points?", "a": "No. If a rate moves from 4% to 6%, it rises by 2 percentage points, but the percentage increase is (6 − 4) ÷ 4 × 100 = 50%." },
-      { "q": "Why is the decrease smaller than the increase going back?", "a": "Each percentage is measured against a different starting value. A rise from 50 to 75 is +50%, while the drop from 75 back to 50 is −33.33%." },
-      { "q": "How do I find the original value before a percentage increase?", "a": "Divide the final value by 1 plus the percentage as a decimal. If a price is 120 after a 20% rise, the original was 120 ÷ 1.2 = 100. Choose the reverse percentage option above to do this." }
+      {
+        "q": "How do I calculate percentage increase?",
+        "a": "Subtract the old value from the new value, divide the result by the old value, then multiply by 100. For example, from 20 to 25: (25 − 20) ÷ 20 × 100 = 25%."
+      },
+      {
+        "q": "Can a percentage increase be more than 100%?",
+        "a": "Yes. If a value more than doubles, the increase is above 100%. Going from 10 to 35 is an increase of 250%."
+      },
+      {
+        "q": "What if the old value is zero?",
+        "a": "The percentage increase is undefined, because the formula divides by the old value and you cannot divide by zero. This calculator shows a message instead of a result."
+      },
+      {
+        "q": "Is a percentage increase the same as percentage points?",
+        "a": "No. If a rate moves from 4% to 6%, it rises by 2 percentage points, but the percentage increase is (6 − 4) ÷ 4 × 100 = 50%."
+      },
+      {
+        "q": "Why is the decrease smaller than the increase going back?",
+        "a": "Each percentage is measured against a different starting value. A rise from 50 to 75 is +50%, while the drop from 75 back to 50 is −33.33%."
+      },
+      {
+        "q": "How do I find the original value before a percentage increase?",
+        "a": "Divide the final value by 1 plus the percentage as a decimal. If a price is 120 after a 20% rise, the original was 120 ÷ 1.2 = 100. Choose the reverse percentage option above to do this."
+      }
     ],
     "adLabel": "Advertisement"
   }

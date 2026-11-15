@@ -1,38 +1,50 @@
 import type { Metadata } from "next";
-import Calculator from "@/components/Calculator";
+import Calculator, { type CalcMessages } from "@/components/Calculator";
 import AdSlot from "@/components/AdSlot";
-import en from "@/messages/en.json";
+import { getLocale } from "@/lib/i18n/config";
+import { getMessages } from "@/lib/i18n/messages";
+import { SITE, alternatesFor, urlFor } from "@/lib/seo";
+import { LOCALES } from "@/lib/i18n/config";
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://percentageincreasecalculator.net";
+type Props = { params: Promise<{ lang: string }> };
 
-export async function generateMetadata(): Promise<Metadata> {
-  const m = en.meta.home;
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { lang } = await params;
+  const loc = getLocale(lang)!;
+  const m = getMessages(lang);
+  const url = urlFor(lang);
   return {
-    title: m.title,
-    description: m.description,
-    alternates: { canonical: `${SITE}/en` },
+    title: m.meta.home.title,
+    description: m.meta.home.description,
+    alternates: alternatesFor(lang),
     robots: { index: true, follow: true },
-    openGraph: { title: m.title, description: m.description, url: `${SITE}/en`, siteName: en.site.name, type: "website", locale: "en" },
-    twitter: { card: "summary", title: m.title, description: m.description },
+    openGraph: {
+      title: m.meta.home.title, description: m.meta.home.description, url, siteName: m.site.name, type: "website",
+      locale: loc.ogLocale, alternateLocale: LOCALES.filter((l) => l.code !== lang).map((l) => l.ogLocale),
+    },
+    twitter: { card: "summary", title: m.meta.home.title, description: m.meta.home.description },
   };
 }
 
-// JSON-LD is data, not script: it is not blocked by CSP script-src. "<" is escaped for safety.
+// JSON-LD is data, not script, so CSP script-src does not apply. "<" is escaped for safety.
 const ld = (o: object) => JSON.stringify(o).replace(/</g, "\\u003c");
 
-export default function Home() {
-  const h = en.home;
+export default async function Home({ params }: Props) {
+  const { lang } = await params;
+  const loc = getLocale(lang)!;
+  const m = getMessages(lang);
+  const h = m.home;
   const jsonLd = [
-    { "@context": "https://schema.org", "@type": "WebSite", name: en.site.name, url: SITE, inLanguage: "en" },
-    { "@context": "https://schema.org", "@type": "WebApplication", name: en.site.name, url: `${SITE}/en`, applicationCategory: "UtilitiesApplication", operatingSystem: "Any (web browser)", inLanguage: "en", description: en.meta.home.description, offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } },
-    { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: h.faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
+    { "@context": "https://schema.org", "@type": "WebSite", name: m.site.name, url: SITE, inLanguage: loc.htmlLang },
+    { "@context": "https://schema.org", "@type": "WebApplication", name: m.site.name, url: urlFor(lang), applicationCategory: "UtilitiesApplication", operatingSystem: "Any (web browser)", inLanguage: loc.htmlLang, description: m.meta.home.description, offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } },
+    { "@context": "https://schema.org", "@type": "FAQPage", inLanguage: loc.htmlLang, mainEntity: h.faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
   ];
   return (
     <main className="wrap">
       <h1>{h.h1}</h1>
       <p className="lead">{h.lead}</p>
-      <section id="calculator" aria-label={en.calc.heading}>
-        <Calculator messages={en.calc as never} locale="en" />
+      <section id="calculator" aria-label={m.calc.heading}>
+        <Calculator messages={m.calc as unknown as CalcMessages} locale={loc.numberLocale} />
       </section>
       <AdSlot label={h.adLabel} slot="home-below-calculator" />
 
@@ -44,7 +56,7 @@ export default function Home() {
       <ol>{h.formulaNotes.map((n) => <li key={n}>{n}</li>)}</ol>
 
       <h2>{h.examplesTitle}</h2>
-      <div className="cards" style={{ gridTemplateColumns: "1fr" }}>
+      <div className="cards one">
         {h.examples.map((e) => <article className="card" key={e.title}><h3>{e.title}</h3><p>{e.body}</p></article>)}
       </div>
 

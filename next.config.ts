@@ -5,6 +5,8 @@ const config: NextConfig = {
   poweredByHeader: false,
   trailingSlash: false,
   images: { formats: ["image/webp"] },
+  // "/" has no content of its own; send everyone to the default language. Not based on IP or country.
+  async redirects() { return [{ source: "/", destination: "/en", permanent: false }]; },
   // Security headers (CSP with nonce is added in Stage 5 via proxy.ts)
   async headers() {
     return [

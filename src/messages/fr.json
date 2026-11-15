@@ -1,1 +1,146 @@
-{}
+{
+  "meta": { "home": {
+    "title": "Calculateur d’augmentation en pourcentage – Gratuit, avec étapes",
+    "description": "Calculez l’augmentation en pourcentage entre deux nombres, ainsi que la baisse, la variation, l’écart et le pourcentage inverse. Gratuit, avec formule et résolution pas à pas."
+  } },
+  "site": { "name": "Calculateur d’augmentation en pourcentage", "skip": "Aller au calculateur", "home": "Accueil", "ad": "Publicité", "language": "Langue",
+    "banner": { "text": "Voir cette page en {language} ?", "go": "Changer", "dismiss": "Non merci" } },
+  "calc": {
+    "heading": "Calculateur de pourcentages",
+    "modeLabel": "Que voulez-vous calculer ?",
+    "modes": {
+      "increase": "Augmentation en pourcentage (de la valeur de départ à la valeur d’arrivée)",
+      "decrease": "Baisse en pourcentage (de la valeur de départ à la valeur d’arrivée)",
+      "increaseBy": "Augmenter un nombre d’un pourcentage",
+      "decreaseBy": "Diminuer un nombre d’un pourcentage",
+      "reverseIncrease": "Pourcentage inverse : retrouver la valeur avant une augmentation",
+      "reverseDecrease": "Pourcentage inverse : retrouver la valeur avant une baisse",
+      "difference": "Écart en pourcentage entre deux nombres"
+    },
+    "fields": {
+      "increase": ["Valeur de départ", "Valeur d’arrivée"],
+      "decrease": ["Valeur de départ", "Valeur d’arrivée"],
+      "increaseBy": ["Nombre", "Augmenter de (%)"],
+      "decreaseBy": ["Nombre", "Diminuer de (%)"],
+      "reverseIncrease": ["Valeur après l’augmentation", "Augmentation appliquée (%)"],
+      "reverseDecrease": ["Valeur après la baisse", "Baisse appliquée (%)"],
+      "difference": ["Premier nombre", "Deuxième nombre"]
+    },
+    "buttons": { "reset": "Effacer", "copy": "Copier le résultat", "copied": "Copié", "copyFailed": "Copie impossible. Sélectionnez le résultat et copiez-le à la main." },
+    "hint": "Saisissez les deux nombres pour voir le résultat, la formule et les étapes.",
+    "resultLabel": "Résultat",
+    "formulaLabel": "Formule",
+    "stepsLabel": "Résolution pas à pas",
+    "noteNegative": "La valeur de départ est négative : le calcul divise donc par sa valeur absolue. Interprétez le résultat avec prudence.",
+    "headline": {
+      "increase": "{pct}\u00a0%", "decrease": "{pct}\u00a0%", "increaseBy": "{value}", "decreaseBy": "{value}",
+      "reverseIncrease": "{value}", "reverseDecrease": "{value}", "difference": "{pct}\u00a0%"
+    },
+    "sentence": {
+      "up": "De {old} à {new}, c’est une augmentation de {abs}\u00a0%.",
+      "down": "De {old} à {new}, c’est une baisse de {abs}\u00a0%.",
+      "same": "{old} et {new} sont identiques : la variation est de 0\u00a0%.",
+      "increaseBy": "{number} augmenté de {percent}\u00a0% donne {value}.",
+      "decreaseBy": "{number} diminué de {percent}\u00a0% donne {value}.",
+      "reverseIncrease": "Une valeur de {final} après une hausse de {percent}\u00a0% valait au départ {value}.",
+      "reverseDecrease": "Une valeur de {final} après une baisse de {percent}\u00a0% valait au départ {value}.",
+      "difference": "L’écart en pourcentage entre {a} et {b} est de {pct}\u00a0%."
+    },
+    "formula": {
+      "increase": "Augmentation en % = (valeur d’arrivée − valeur de départ) ÷ |valeur de départ| × 100",
+      "decrease": "Baisse en % = (valeur de départ − valeur d’arrivée) ÷ |valeur de départ| × 100",
+      "increaseBy": "Nouvelle valeur = nombre × (1 + pourcentage ÷ 100)",
+      "decreaseBy": "Nouvelle valeur = nombre × (1 − pourcentage ÷ 100)",
+      "reverseIncrease": "Valeur initiale = valeur finale ÷ (1 + pourcentage ÷ 100)",
+      "reverseDecrease": "Valeur initiale = valeur finale ÷ (1 − pourcentage ÷ 100)",
+      "difference": "Écart en % = |a − b| ÷ ((a + b) ÷ 2) × 100"
+    },
+    "steps": {
+      "increase": [
+        "Soustrayez la valeur de départ de la valeur d’arrivée : {new} − {old} = {diff}",
+        "Divisez par la valeur de départ : {diff} ÷ {absOld} = {ratio}",
+        "Multipliez par 100 : {ratio} × 100 = {pct}\u00a0%"
+      ],
+      "decrease": [
+        "Soustrayez la valeur d’arrivée de la valeur de départ : {old} − {new} = {drop}",
+        "Divisez par la valeur de départ : {drop} ÷ {absOld} = {ratio}",
+        "Multipliez par 100 : {ratio} × 100 = {pct}\u00a0%"
+      ],
+      "increaseBy": [
+        "Transformez le pourcentage en décimal : {percent} ÷ 100 = {rate}",
+        "Calculez le montant : {number} × {rate} = {amount}",
+        "Ajoutez-le au nombre : {number} + {amount} = {value}"
+      ],
+      "decreaseBy": [
+        "Transformez le pourcentage en décimal : {percent} ÷ 100 = {rate}",
+        "Calculez le montant : {number} × {rate} = {amount}",
+        "Retranchez-le du nombre : {number} − {amount} = {value}"
+      ],
+      "reverseIncrease": [
+        "Calculez le coefficient : 1 + {percent} ÷ 100 = {factor}",
+        "Divisez la valeur finale par ce coefficient : {final} ÷ {factor} = {value}"
+      ],
+      "reverseDecrease": [
+        "Calculez le coefficient : 1 − {percent} ÷ 100 = {factor}",
+        "Divisez la valeur finale par ce coefficient : {final} ÷ {factor} = {value}"
+      ],
+      "difference": [
+        "Calculez l’écart entre les nombres : |{a} − {b}| = {diff}",
+        "Calculez leur moyenne : ({a} + {b}) ÷ 2 = {avg}",
+        "Divisez l’écart par la moyenne : {diff} ÷ {absAvg} = {ratio}",
+        "Multipliez par 100 : {ratio} × 100 = {pct}\u00a0%"
+      ]
+    },
+    "copyText": "{sentence}",
+    "errors": {
+      "invalid": "Saisissez un nombre valide, uniquement avec des chiffres. Par exemple : 25 ou 1 250,50.",
+      "tooLarge": "Ce nombre est trop grand. Utilisez une valeur inférieure à 1 000 000 000 000 000.",
+      "divByZero": "Calcul impossible : il faudrait diviser par zéro. Si la valeur de départ est 0, la variation en pourcentage n’est pas définie.",
+      "zeroAverage": "L’écart en pourcentage n’est pas défini ici, car la moyenne des deux nombres est 0.",
+      "badFactor": "Ce pourcentage est trop grand pour ce calcul. Essayez une baisse inférieure à 100\u00a0%.",
+      "overflow": "Le résultat est trop grand pour être affiché. Utilisez des nombres plus petits."
+    }
+  },
+  "home": {
+    "h1": "Calculateur d’augmentation en pourcentage",
+    "lead": "Saisissez une valeur de départ et une valeur d’arrivée : l’augmentation en pourcentage s’affiche aussitôt, avec la formule et chaque étape. Vous pouvez aussi calculer une baisse, une variation, un écart, ou retrouver le nombre d’origine avant l’application d’un pourcentage.",
+    "whatTitle": "Qu’est-ce qu’une augmentation en pourcentage ?",
+    "what": [
+      "L’augmentation en pourcentage mesure de combien une quantité a grandi par rapport à son point de départ. Elle s’exprime en pourcentage de la valeur de départ : passer de 50 à 75, c’est une hausse de 50\u00a0%, soit la moitié de la valeur initiale.",
+      "Comme la valeur de départ sert de référence, un même écart donne des pourcentages différents selon le sens. De 50 à 75, la hausse est de 50\u00a0%, mais de 75 à 50, la baisse n’est que de 33,33\u00a0%."
+    ],
+    "formulaTitle": "Formule de l’augmentation en pourcentage",
+    "formulaMain": "Augmentation en % = (valeur d’arrivée − valeur de départ) ÷ valeur de départ × 100",
+    "formulaNotes": [
+      "Soustrayez la valeur de départ de la valeur d’arrivée pour obtenir l’augmentation.",
+      "Divisez cette augmentation par la valeur de départ.",
+      "Multipliez par 100 pour obtenir un pourcentage.",
+      "Un résultat négatif signifie que la valeur a baissé : c’est une diminution."
+    ],
+    "examplesTitle": "Exemples détaillés",
+    "examples": [
+      { "title": "Un prix qui monte", "body": "Une paire de baskets coûte 80\u00a0€ puis passe à 100\u00a0€. L’augmentation est de 100 − 80 = 20\u00a0€. Ensuite, 20 ÷ 80 = 0,25 et 0,25 × 100 = 25\u00a0%. Le prix a augmenté de 25\u00a0%." },
+      { "title": "Une augmentation de salaire", "body": "Votre salaire passe de 2\u00a0000\u00a0€ à 2\u00a0200\u00a0€. L’augmentation est de 200\u00a0€. Ensuite, 200 ÷ 2\u00a0000 = 0,1 : la hausse est de 10\u00a0%." },
+      { "title": "Visites d’un site", "body": "Un blog a reçu 1\u00a0200 visites le mois dernier et 1\u00a0830 ce mois-ci. L’augmentation est de 630. Ensuite, 630 ÷ 1\u00a0200 = 0,525 : le trafic a progressé de 52,5\u00a0%." },
+      { "title": "Une baisse", "body": "Un téléphone passe de 250\u00a0€ à 200\u00a0€ pendant les soldes. La variation est de 200 − 250 = −50\u00a0€. Ensuite, −50 ÷ 250 = −0,2, soit −20\u00a0%. Le prix a baissé de 20\u00a0%." },
+      { "title": "Augmenter un nombre d’un pourcentage", "body": "Pour ajouter 15\u00a0% à 60, calculez d’abord 15\u00a0% de 60 : 60 × 0,15 = 9. Ajoutez ensuite : 60 + 9 = 69. En une seule étape : 60 × 1,15 = 69." }
+    ],
+    "useTitle": "Où l’utiliser",
+    "uses": [
+      { "title": "Salaire", "body": "Comparez l’ancien et le nouveau salaire pour mesurer l’ampleur d’une augmentation." },
+      { "title": "Prix et loyer", "body": "Vérifiez de combien un produit, un loyer ou une facture a augmenté entre deux dates." },
+      { "title": "Marketing", "body": "Mesurez la croissance des visites, des inscriptions ou des ventes d’une période à l’autre." },
+      { "title": "Croissance", "body": "Suivez une épargne, une population, un poids ou tout chiffre qui évolue dans le temps." }
+    ],
+    "faqTitle": "Questions fréquentes",
+    "faq": [
+      { "q": "Comment calculer une augmentation en pourcentage ?", "a": "Soustrayez la valeur de départ de la valeur d’arrivée, divisez le résultat par la valeur de départ, puis multipliez par 100. Par exemple, de 20 à 25 : (25 − 20) ÷ 20 × 100 = 25\u00a0%." },
+      { "q": "Une augmentation peut-elle dépasser 100\u00a0% ?", "a": "Oui. Si une valeur fait plus que doubler, l’augmentation dépasse 100\u00a0%. De 10 à 35, la hausse est de 250\u00a0%." },
+      { "q": "Que se passe-t-il si la valeur de départ est zéro ?", "a": "L’augmentation en pourcentage n’est pas définie, car la formule divise par la valeur de départ et on ne peut pas diviser par zéro. Ce calculateur affiche un message au lieu d’un résultat." },
+      { "q": "Pourcentage et points de pourcentage, est-ce pareil ?", "a": "Non. Si un taux passe de 4\u00a0% à 6\u00a0%, il gagne 2 points de pourcentage, mais l’augmentation en pourcentage est de (6 − 4) ÷ 4 × 100 = 50\u00a0%." },
+      { "q": "Pourquoi la baisse est-elle plus faible que la hausse inverse ?", "a": "Chaque pourcentage se calcule sur une base différente. De 50 à 75, c’est +50\u00a0%, alors que de 75 à 50, c’est −33,33\u00a0%." },
+      { "q": "Comment retrouver la valeur avant une augmentation ?", "a": "Divisez la valeur finale par 1 plus le pourcentage en décimal. Si un prix vaut 120 après une hausse de 20\u00a0%, le prix initial était 120 ÷ 1,2 = 100. Choisissez l’option de pourcentage inverse dans le calculateur." }
+    ],
+    "adLabel": "Publicité"
+  }
+}

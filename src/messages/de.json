@@ -1,1 +1,146 @@
-{}
+{
+  "meta": { "home": {
+    "title": "Prozentuale Zunahme berechnen – Rechner mit Rechenweg",
+    "description": "Berechnen Sie die prozentuale Zunahme zwischen zwei Zahlen, außerdem Abnahme, Veränderung, Unterschied und den Grundwert. Kostenlos, mit Formel und Rechenweg."
+  } },
+  "site": { "name": "Prozentrechner Zunahme", "skip": "Zum Rechner springen", "home": "Startseite", "ad": "Werbung", "language": "Sprache",
+    "banner": { "text": "Diese Seite auf {language} ansehen?", "go": "Wechseln", "dismiss": "Nein, danke" } },
+  "calc": {
+    "heading": "Prozentrechner",
+    "modeLabel": "Was möchten Sie berechnen?",
+    "modes": {
+      "increase": "Prozentuale Zunahme (vom alten zum neuen Wert)",
+      "decrease": "Prozentuale Abnahme (vom alten zum neuen Wert)",
+      "increaseBy": "Eine Zahl um einen Prozentsatz erhöhen",
+      "decreaseBy": "Eine Zahl um einen Prozentsatz verringern",
+      "reverseIncrease": "Grundwert finden: Wert vor einer Erhöhung",
+      "reverseDecrease": "Grundwert finden: Wert vor einer Verringerung",
+      "difference": "Prozentualer Unterschied zwischen zwei Zahlen"
+    },
+    "fields": {
+      "increase": ["Alter Wert", "Neuer Wert"],
+      "decrease": ["Alter Wert", "Neuer Wert"],
+      "increaseBy": ["Zahl", "Erhöhung um (%)"],
+      "decreaseBy": ["Zahl", "Verringerung um (%)"],
+      "reverseIncrease": ["Wert nach der Erhöhung", "Angewendete Erhöhung (%)"],
+      "reverseDecrease": ["Wert nach der Verringerung", "Angewendete Verringerung (%)"],
+      "difference": ["Erste Zahl", "Zweite Zahl"]
+    },
+    "buttons": { "reset": "Zurücksetzen", "copy": "Ergebnis kopieren", "copied": "Kopiert", "copyFailed": "Kopieren nicht möglich. Markieren Sie das Ergebnis und kopieren Sie es von Hand." },
+    "hint": "Geben Sie beide Zahlen ein, um Ergebnis, Formel und Rechenweg zu sehen.",
+    "resultLabel": "Ergebnis",
+    "formulaLabel": "Formel",
+    "stepsLabel": "Rechenweg Schritt für Schritt",
+    "noteNegative": "Der alte Wert ist negativ, daher wird durch seinen Betrag geteilt. Bitte deuten Sie das Ergebnis mit Vorsicht.",
+    "headline": {
+      "increase": "{pct}\u00a0%", "decrease": "{pct}\u00a0%", "increaseBy": "{value}", "decreaseBy": "{value}",
+      "reverseIncrease": "{value}", "reverseDecrease": "{value}", "difference": "{pct}\u00a0%"
+    },
+    "sentence": {
+      "up": "Von {old} auf {new} ist eine Zunahme von {abs}\u00a0%.",
+      "down": "Von {old} auf {new} ist eine Abnahme von {abs}\u00a0%.",
+      "same": "{old} und {new} sind gleich, die Veränderung beträgt also 0\u00a0%.",
+      "increaseBy": "{number} um {percent}\u00a0% erhöht ergibt {value}.",
+      "decreaseBy": "{number} um {percent}\u00a0% verringert ergibt {value}.",
+      "reverseIncrease": "Ein Wert von {final} nach einer Erhöhung um {percent}\u00a0% lag vorher bei {value}.",
+      "reverseDecrease": "Ein Wert von {final} nach einer Verringerung um {percent}\u00a0% lag vorher bei {value}.",
+      "difference": "Der prozentuale Unterschied zwischen {a} und {b} beträgt {pct}\u00a0%."
+    },
+    "formula": {
+      "increase": "Prozentuale Zunahme = (neuer Wert − alter Wert) ÷ |alter Wert| × 100",
+      "decrease": "Prozentuale Abnahme = (alter Wert − neuer Wert) ÷ |alter Wert| × 100",
+      "increaseBy": "Neuer Wert = Zahl × (1 + Prozentsatz ÷ 100)",
+      "decreaseBy": "Neuer Wert = Zahl × (1 − Prozentsatz ÷ 100)",
+      "reverseIncrease": "Ursprünglicher Wert = Endwert ÷ (1 + Prozentsatz ÷ 100)",
+      "reverseDecrease": "Ursprünglicher Wert = Endwert ÷ (1 − Prozentsatz ÷ 100)",
+      "difference": "Prozentualer Unterschied = |a − b| ÷ ((a + b) ÷ 2) × 100"
+    },
+    "steps": {
+      "increase": [
+        "Alten Wert vom neuen Wert abziehen: {new} − {old} = {diff}",
+        "Durch den alten Wert teilen: {diff} ÷ {absOld} = {ratio}",
+        "Mit 100 multiplizieren: {ratio} × 100 = {pct}\u00a0%"
+      ],
+      "decrease": [
+        "Neuen Wert vom alten Wert abziehen: {old} − {new} = {drop}",
+        "Durch den alten Wert teilen: {drop} ÷ {absOld} = {ratio}",
+        "Mit 100 multiplizieren: {ratio} × 100 = {pct}\u00a0%"
+      ],
+      "increaseBy": [
+        "Prozentsatz in eine Dezimalzahl umwandeln: {percent} ÷ 100 = {rate}",
+        "Betrag berechnen: {number} × {rate} = {amount}",
+        "Zur Zahl addieren: {number} + {amount} = {value}"
+      ],
+      "decreaseBy": [
+        "Prozentsatz in eine Dezimalzahl umwandeln: {percent} ÷ 100 = {rate}",
+        "Betrag berechnen: {number} × {rate} = {amount}",
+        "Von der Zahl abziehen: {number} − {amount} = {value}"
+      ],
+      "reverseIncrease": [
+        "Faktor berechnen: 1 + {percent} ÷ 100 = {factor}",
+        "Endwert durch den Faktor teilen: {final} ÷ {factor} = {value}"
+      ],
+      "reverseDecrease": [
+        "Faktor berechnen: 1 − {percent} ÷ 100 = {factor}",
+        "Endwert durch den Faktor teilen: {final} ÷ {factor} = {value}"
+      ],
+      "difference": [
+        "Abstand der Zahlen bestimmen: |{a} − {b}| = {diff}",
+        "Mittelwert bilden: ({a} + {b}) ÷ 2 = {avg}",
+        "Abstand durch den Mittelwert teilen: {diff} ÷ {absAvg} = {ratio}",
+        "Mit 100 multiplizieren: {ratio} × 100 = {pct}\u00a0%"
+      ]
+    },
+    "copyText": "{sentence}",
+    "errors": {
+      "invalid": "Bitte geben Sie eine gültige Zahl nur mit Ziffern ein, zum Beispiel 25 oder 1.250,50.",
+      "tooLarge": "Diese Zahl ist zu groß. Bitte verwenden Sie einen Wert unter 1.000.000.000.000.000.",
+      "divByZero": "Das lässt sich nicht berechnen, weil durch null geteilt werden müsste. Ist der alte Wert 0, ist die prozentuale Veränderung nicht definiert.",
+      "zeroAverage": "Der prozentuale Unterschied ist hier nicht definiert, weil der Mittelwert der beiden Zahlen 0 ist.",
+      "badFactor": "Dieser Prozentsatz ist für die Berechnung zu groß. Versuchen Sie eine Verringerung unter 100\u00a0%.",
+      "overflow": "Das Ergebnis ist zu groß für die Anzeige. Bitte verwenden Sie kleinere Zahlen."
+    }
+  },
+  "home": {
+    "h1": "Prozentuale Zunahme berechnen",
+    "lead": "Geben Sie einen alten und einen neuen Wert ein, und die prozentuale Zunahme erscheint sofort, mit Formel und jedem Rechenschritt. Sie können auch eine Abnahme, eine Veränderung oder einen Unterschied berechnen oder den ursprünglichen Wert vor einer Prozenterhöhung finden.",
+    "whatTitle": "Was ist die prozentuale Zunahme?",
+    "what": [
+      "Die prozentuale Zunahme zeigt, wie stark ein Wert im Vergleich zum Ausgangswert gewachsen ist. Sie wird als Anteil des alten Werts angegeben: Steigt etwas von 50 auf 75, sind das 50\u00a0% mehr, also die Hälfte des ursprünglichen Werts.",
+      "Weil der alte Wert die Bezugsgröße ist, ergibt derselbe Abstand je nach Richtung unterschiedliche Prozentwerte. Von 50 auf 75 sind es 50\u00a0% Zunahme, von 75 zurück auf 50 aber nur 33,33\u00a0% Abnahme."
+    ],
+    "formulaTitle": "Formel für die prozentuale Zunahme",
+    "formulaMain": "Prozentuale Zunahme = (neuer Wert − alter Wert) ÷ alter Wert × 100",
+    "formulaNotes": [
+      "Ziehen Sie den alten Wert vom neuen Wert ab, um die Zunahme zu erhalten.",
+      "Teilen Sie die Zunahme durch den alten Wert.",
+      "Multiplizieren Sie mit 100, um einen Prozentwert zu erhalten.",
+      "Ein negatives Ergebnis bedeutet, dass der Wert gesunken ist: Es ist eine Abnahme."
+    ],
+    "examplesTitle": "Beispiele mit Rechenweg",
+    "examples": [
+      { "title": "Ein Preis steigt", "body": "Ein Paar Schuhe kostet 80\u00a0€, danach 100\u00a0€. Die Zunahme beträgt 100 − 80 = 20\u00a0€. Dann gilt 20 ÷ 80 = 0,25 und 0,25 × 100 = 25\u00a0%. Der Preis ist um 25\u00a0% gestiegen." },
+      { "title": "Eine Gehaltserhöhung", "body": "Ihr Gehalt steigt von 3.000\u00a0€ auf 3.300\u00a0€. Die Zunahme beträgt 300\u00a0€. Dann gilt 300 ÷ 3.000 = 0,1, die Erhöhung liegt also bei 10\u00a0%." },
+      { "title": "Besucher einer Website", "body": "Ein Blog hatte letzten Monat 1.200 Besucher und diesen Monat 1.830. Die Zunahme beträgt 630. Dann gilt 630 ÷ 1.200 = 0,525, der Verkehr ist also um 52,5\u00a0% gewachsen." },
+      { "title": "Eine Abnahme", "body": "Ein Handy wird von 250\u00a0€ auf 200\u00a0€ reduziert. Die Veränderung ist 200 − 250 = −50\u00a0€. Dann gilt −50 ÷ 250 = −0,2, also −20\u00a0%. Der Preis ist um 20\u00a0% gesunken." },
+      { "title": "Eine Zahl um einen Prozentsatz erhöhen", "body": "Um 15\u00a0% auf 60 aufzuschlagen, berechnen Sie zuerst 15\u00a0% von 60: 60 × 0,15 = 9. Dann addieren Sie: 60 + 9 = 69. In einem Schritt geht es auch: 60 × 1,15 = 69." }
+    ],
+    "useTitle": "Wofür man es braucht",
+    "uses": [
+      { "title": "Gehalt", "body": "Vergleichen Sie altes und neues Gehalt, um die Höhe einer Erhöhung zu sehen." },
+      { "title": "Preise und Miete", "body": "Prüfen Sie, wie stark ein Produkt, die Miete oder eine Rechnung zwischen zwei Zeitpunkten gestiegen ist." },
+      { "title": "Marketing", "body": "Messen Sie das Wachstum von Besuchen, Anmeldungen oder Verkäufen von einem Zeitraum zum nächsten." },
+      { "title": "Wachstum", "body": "Verfolgen Sie Ersparnisse, Einwohnerzahl, Gewicht oder jede Zahl, die sich über die Zeit ändert." }
+    ],
+    "faqTitle": "Häufige Fragen",
+    "faq": [
+      { "q": "Wie berechnet man die prozentuale Zunahme?", "a": "Ziehen Sie den alten Wert vom neuen Wert ab, teilen Sie das Ergebnis durch den alten Wert und multiplizieren Sie mit 100. Beispiel von 20 auf 25: (25 − 20) ÷ 20 × 100 = 25\u00a0%." },
+      { "q": "Kann die prozentuale Zunahme über 100\u00a0% liegen?", "a": "Ja. Wenn sich ein Wert mehr als verdoppelt, liegt die Zunahme über 100\u00a0%. Von 10 auf 35 sind es 250\u00a0%." },
+      { "q": "Was gilt, wenn der alte Wert null ist?", "a": "Die prozentuale Zunahme ist dann nicht definiert, weil die Formel durch den alten Wert teilt und eine Division durch null nicht möglich ist. Dieser Rechner zeigt statt eines Ergebnisses einen Hinweis." },
+      { "q": "Sind Prozent und Prozentpunkte dasselbe?", "a": "Nein. Steigt ein Zinssatz von 4\u00a0% auf 6\u00a0%, sind das 2 Prozentpunkte, die prozentuale Zunahme beträgt aber (6 − 4) ÷ 4 × 100 = 50\u00a0%." },
+      { "q": "Warum ist die Abnahme zurück kleiner als die Zunahme?", "a": "Jeder Prozentwert bezieht sich auf einen anderen Ausgangswert. Von 50 auf 75 sind es +50\u00a0%, von 75 zurück auf 50 aber −33,33\u00a0%." },
+      { "q": "Wie finde ich den Wert vor einer Erhöhung?", "a": "Teilen Sie den Endwert durch 1 plus den Prozentsatz als Dezimalzahl. Kostet etwas nach 20\u00a0% Aufschlag 120, war der ursprüngliche Preis 120 ÷ 1,2 = 100. Wählen Sie dafür oben die Option zum Grundwert." }
+    ],
+    "adLabel": "Werbung"
+  }
+}
