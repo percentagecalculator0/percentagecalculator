@@ -30,7 +30,9 @@ export function parseNumber(raw: string, locale = "en"): ParseResult {
   const g = group === " " ? " " : group.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const dec = decimal.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const grouped = new RegExp(`^[+-]?\\d{1,3}(${g}\\d{3})+(${dec}\\d+)?$`);
-  if (grouped.test(s)) s = s.split(group).join("");
+  // Indian digit grouping (12,34,567) is also accepted, since it is the norm for Hindi readers.
+  const indian = new RegExp(`^[+-]?\\d{1,2}(${g}\\d{2})*${g}\\d{3}(${dec}\\d+)?$`);
+  if (grouped.test(s) || indian.test(s)) s = s.split(group).join("");
   else if (s.includes(" ")) return { ok: false, error: "invalid" };
   if (decimal !== ".") {
     if (s.includes(".")) return { ok: false, error: "invalid" };

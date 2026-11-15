@@ -15,7 +15,10 @@ export const LOCALES: Locale[] = [
   { code: "es", hreflang: "es", htmlLang: "es", nativeName: "Español", dir: "ltr", numberLocale: "es", ogLocale: "es_ES" },
   { code: "fr", hreflang: "fr", htmlLang: "fr", nativeName: "Français", dir: "ltr", numberLocale: "fr", ogLocale: "fr_FR" },
   { code: "de", hreflang: "de", htmlLang: "de", nativeName: "Deutsch", dir: "ltr", numberLocale: "de", ogLocale: "de_DE" },
-  // Next batch (files exist but are still empty): pt, id, hi, ar (ar is rtl)
+  { code: "pt", hreflang: "pt", htmlLang: "pt-BR", nativeName: "Português", dir: "ltr", numberLocale: "pt-BR", ogLocale: "pt_BR" },
+  { code: "id", hreflang: "id", htmlLang: "id", nativeName: "Bahasa Indonesia", dir: "ltr", numberLocale: "id", ogLocale: "id_ID" },
+  { code: "hi", hreflang: "hi", htmlLang: "hi", nativeName: "हिन्दी", dir: "ltr", numberLocale: "hi", ogLocale: "hi_IN" },
+  { code: "ar", hreflang: "ar", htmlLang: "ar", nativeName: "العربية", dir: "rtl", numberLocale: "ar", ogLocale: "ar_AR" },
 ];
 
 export const DEFAULT_LOCALE = "en";
