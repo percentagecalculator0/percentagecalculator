@@ -1,0 +1,272 @@
+{
+  "meta": {
+    "home": {
+      "title": "Kalkulator Persentase Kenaikan – Gratis, dengan Langkah",
+      "description": "Hitung persentase kenaikan antara dua angka, juga penurunan, perubahan, selisih, dan persentase terbalik. Gratis, lengkap dengan rumus dan langkah penyelesaian."
+    }
+  },
+  "site": {
+    "name": "Kalkulator Persentase Kenaikan",
+    "skip": "Langsung ke kalkulator",
+    "home": "Beranda",
+    "ad": "Iklan",
+    "language": "Bahasa",
+    "banner": {
+      "text": "Lihat halaman ini dalam {language}?",
+      "go": "Ganti",
+      "dismiss": "Tidak, terima kasih"
+    },
+    "reviews": "Ulasan"
+  },
+  "calc": {
+    "heading": "Kalkulator persentase",
+    "modeLabel": "Apa yang ingin Anda hitung?",
+    "modes": {
+      "increase": "Persentase kenaikan (dari nilai lama ke nilai baru)",
+      "decrease": "Persentase penurunan (dari nilai lama ke nilai baru)",
+      "increaseBy": "Menaikkan sebuah angka sebesar persentase tertentu",
+      "decreaseBy": "Menurunkan sebuah angka sebesar persentase tertentu",
+      "reverseIncrease": "Persentase terbalik: cari nilai awal sebelum kenaikan",
+      "reverseDecrease": "Persentase terbalik: cari nilai awal sebelum penurunan",
+      "difference": "Persentase selisih antara dua angka"
+    },
+    "fields": {
+      "increase": [
+        "Nilai lama",
+        "Nilai baru"
+      ],
+      "decrease": [
+        "Nilai lama",
+        "Nilai baru"
+      ],
+      "increaseBy": [
+        "Angka",
+        "Naik sebesar (%)"
+      ],
+      "decreaseBy": [
+        "Angka",
+        "Turun sebesar (%)"
+      ],
+      "reverseIncrease": [
+        "Nilai setelah kenaikan",
+        "Kenaikan yang diterapkan (%)"
+      ],
+      "reverseDecrease": [
+        "Nilai setelah penurunan",
+        "Penurunan yang diterapkan (%)"
+      ],
+      "difference": [
+        "Angka pertama",
+        "Angka kedua"
+      ]
+    },
+    "buttons": {
+      "reset": "Reset",
+      "copy": "Salin hasil",
+      "copied": "Tersalin",
+      "copyFailed": "Tidak bisa menyalin. Pilih hasilnya lalu salin secara manual."
+    },
+    "hint": "Masukkan kedua angka untuk melihat hasil, rumus, dan langkah-langkahnya.",
+    "resultLabel": "Hasil",
+    "formulaLabel": "Rumus",
+    "stepsLabel": "Penyelesaian langkah demi langkah",
+    "noteNegative": "Nilai lama bernilai negatif, jadi perhitungan membagi dengan nilai mutlaknya. Baca hasilnya dengan hati-hati.",
+    "headline": {
+      "increase": "{pct}%",
+      "decrease": "{pct}%",
+      "increaseBy": "{value}",
+      "decreaseBy": "{value}",
+      "reverseIncrease": "{value}",
+      "reverseDecrease": "{value}",
+      "difference": "{pct}%"
+    },
+    "sentence": {
+      "up": "Dari {old} menjadi {new} berarti naik {abs}%.",
+      "down": "Dari {old} menjadi {new} berarti turun {abs}%.",
+      "same": "{old} dan {new} sama, jadi perubahannya 0%.",
+      "increaseBy": "{number} dinaikkan {percent}% menjadi {value}.",
+      "decreaseBy": "{number} diturunkan {percent}% menjadi {value}.",
+      "reverseIncrease": "Nilai {final} setelah naik {percent}% semula adalah {value}.",
+      "reverseDecrease": "Nilai {final} setelah turun {percent}% semula adalah {value}.",
+      "difference": "Persentase selisih antara {a} dan {b} adalah {pct}%."
+    },
+    "formula": {
+      "increase": "Persentase kenaikan = (nilai baru − nilai lama) ÷ |nilai lama| × 100",
+      "decrease": "Persentase penurunan = (nilai lama − nilai baru) ÷ |nilai lama| × 100",
+      "increaseBy": "Nilai baru = angka × (1 + persentase ÷ 100)",
+      "decreaseBy": "Nilai baru = angka × (1 − persentase ÷ 100)",
+      "reverseIncrease": "Nilai awal = nilai akhir ÷ (1 + persentase ÷ 100)",
+      "reverseDecrease": "Nilai awal = nilai akhir ÷ (1 − persentase ÷ 100)",
+      "difference": "Persentase selisih = |a − b| ÷ ((a + b) ÷ 2) × 100"
+    },
+    "steps": {
+      "increase": [
+        "Kurangi nilai baru dengan nilai lama: {new} − {old} = {diff}",
+        "Bagi dengan nilai lama: {diff} ÷ {absOld} = {ratio}",
+        "Kalikan dengan 100: {ratio} × 100 = {pct}%"
+      ],
+      "decrease": [
+        "Kurangi nilai lama dengan nilai baru: {old} − {new} = {drop}",
+        "Bagi dengan nilai lama: {drop} ÷ {absOld} = {ratio}",
+        "Kalikan dengan 100: {ratio} × 100 = {pct}%"
+      ],
+      "increaseBy": [
+        "Ubah persentase menjadi desimal: {percent} ÷ 100 = {rate}",
+        "Cari jumlahnya: {number} × {rate} = {amount}",
+        "Tambahkan ke angka: {number} + {amount} = {value}"
+      ],
+      "decreaseBy": [
+        "Ubah persentase menjadi desimal: {percent} ÷ 100 = {rate}",
+        "Cari jumlahnya: {number} × {rate} = {amount}",
+        "Kurangkan dari angka: {number} − {amount} = {value}"
+      ],
+      "reverseIncrease": [
+        "Hitung pengalinya: 1 + {percent} ÷ 100 = {factor}",
+        "Bagi nilai akhir dengan pengali itu: {final} ÷ {factor} = {value}"
+      ],
+      "reverseDecrease": [
+        "Hitung pengalinya: 1 − {percent} ÷ 100 = {factor}",
+        "Bagi nilai akhir dengan pengali itu: {final} ÷ {factor} = {value}"
+      ],
+      "difference": [
+        "Cari jarak antara kedua angka: |{a} − {b}| = {diff}",
+        "Cari rata-ratanya: ({a} + {b}) ÷ 2 = {avg}",
+        "Bagi jarak dengan rata-rata: {diff} ÷ {absAvg} = {ratio}",
+        "Kalikan dengan 100: {ratio} × 100 = {pct}%"
+      ]
+    },
+    "copyText": "{sentence}",
+    "errors": {
+      "invalid": "Masukkan angka yang valid, hanya berisi digit. Contoh: 25 atau 1.250,50.",
+      "tooLarge": "Angka ini terlalu besar. Gunakan nilai di bawah 1.000.000.000.000.000.",
+      "divByZero": "Tidak bisa dihitung karena harus membagi dengan nol. Jika nilai lama adalah 0, persentase perubahan tidak terdefinisi.",
+      "zeroAverage": "Persentase selisih tidak terdefinisi di sini karena rata-rata kedua angka adalah 0.",
+      "badFactor": "Persentase ini terlalu besar untuk perhitungan ini. Coba penurunan di bawah 100%.",
+      "overflow": "Hasilnya terlalu besar untuk ditampilkan. Gunakan angka yang lebih kecil."
+    }
+  },
+  "home": {
+    "h1": "Kalkulator Persentase Kenaikan",
+    "lead": "Masukkan nilai lama dan nilai baru, lalu persentase kenaikannya langsung muncul lengkap dengan rumus dan setiap langkahnya. Anda juga bisa menghitung penurunan, perubahan, selisih, atau mencari angka awal sebelum sebuah persentase ditambahkan.",
+    "whatTitle": "Apa itu persentase kenaikan?",
+    "what": [
+      "Persentase kenaikan menunjukkan seberapa besar sebuah angka bertambah dibandingkan titik awalnya. Nilainya dinyatakan sebagai persentase dari nilai lama: naik dari 50 menjadi 75 berarti kenaikan 50%, yaitu setengah dari ukuran awalnya.",
+      "Karena nilai lama menjadi acuan, selisih yang sama bisa menghasilkan persentase berbeda tergantung arahnya. Dari 50 ke 75 naik 50%, tetapi dari 75 kembali ke 50 hanya turun 33,33%."
+    ],
+    "formulaTitle": "Rumus persentase kenaikan",
+    "formulaMain": "Persentase kenaikan = (nilai baru − nilai lama) ÷ nilai lama × 100",
+    "formulaNotes": [
+      "Kurangi nilai baru dengan nilai lama untuk mendapatkan kenaikannya.",
+      "Bagi kenaikan itu dengan nilai lama.",
+      "Kalikan dengan 100 agar menjadi persentase.",
+      "Hasil negatif berarti nilainya turun, jadi itu adalah penurunan."
+    ],
+    "examplesTitle": "Contoh soal dan penyelesaian",
+    "examples": [
+      {
+        "title": "Harga naik",
+        "body": "Sepasang sepatu seharga Rp800.000 naik menjadi Rp1.000.000. Kenaikannya 1.000.000 − 800.000 = Rp200.000. Lalu 200.000 ÷ 800.000 = 0,25 dan 0,25 × 100 = 25%. Harganya naik 25%."
+      },
+      {
+        "title": "Kenaikan gaji",
+        "body": "Gaji Anda naik dari Rp4.000.000 menjadi Rp4.400.000. Kenaikannya Rp400.000. Lalu 400.000 ÷ 4.000.000 = 0,1, jadi gaji naik 10%."
+      },
+      {
+        "title": "Pengunjung situs",
+        "body": "Sebuah blog dikunjungi 1.200 orang bulan lalu dan 1.830 orang bulan ini. Kenaikannya 630. Lalu 630 ÷ 1.200 = 0,525, jadi lalu lintas situs tumbuh 52,5%."
+      },
+      {
+        "title": "Sebuah penurunan",
+        "body": "Harga ponsel turun dari Rp2.500.000 menjadi Rp2.000.000 saat diskon. Perubahannya 2.000.000 − 2.500.000 = −Rp500.000. Lalu −500.000 ÷ 2.500.000 = −0,2, yaitu −20%. Harganya turun 20%."
+      },
+      {
+        "title": "Menaikkan angka sebesar persentase tertentu",
+        "body": "Untuk menambah 15% pada 60, cari dulu 15% dari 60: 60 × 0,15 = 9. Lalu tambahkan: 60 + 9 = 69. Bisa juga sekali jalan: 60 × 1,15 = 69."
+      }
+    ],
+    "useTitle": "Untuk apa digunakan",
+    "uses": [
+      {
+        "title": "Gaji",
+        "body": "Bandingkan gaji lama dan baru untuk melihat besar kenaikannya."
+      },
+      {
+        "title": "Harga dan sewa",
+        "body": "Cek seberapa naik harga barang, uang sewa, atau tagihan antara dua tanggal."
+      },
+      {
+        "title": "Pemasaran",
+        "body": "Ukur pertumbuhan kunjungan, pendaftar, atau penjualan dari satu periode ke periode berikutnya."
+      },
+      {
+        "title": "Pertumbuhan",
+        "body": "Pantau tabungan, jumlah penduduk, berat badan, atau angka apa pun yang berubah seiring waktu."
+      }
+    ],
+    "faqTitle": "Pertanyaan yang sering diajukan",
+    "faq": [
+      {
+        "q": "Bagaimana cara menghitung persentase kenaikan?",
+        "a": "Kurangi nilai lama dari nilai baru, bagi hasilnya dengan nilai lama, lalu kalikan 100. Misalnya dari 20 ke 25: (25 − 20) ÷ 20 × 100 = 25%."
+      },
+      {
+        "q": "Bisakah persentase kenaikan lebih dari 100%?",
+        "a": "Bisa. Jika sebuah nilai naik lebih dari dua kali lipat, kenaikannya di atas 100%. Dari 10 ke 35, kenaikannya 250%."
+      },
+      {
+        "q": "Bagaimana jika nilai lama adalah nol?",
+        "a": "Persentase kenaikan tidak terdefinisi, karena rumusnya membagi dengan nilai lama dan pembagian dengan nol tidak mungkin dilakukan. Kalkulator ini menampilkan pesan, bukan hasil."
+      },
+      {
+        "q": "Apakah persentase sama dengan poin persentase?",
+        "a": "Tidak. Jika suku bunga naik dari 4% ke 6%, kenaikannya 2 poin persentase, tetapi persentase kenaikannya adalah (6 − 4) ÷ 4 × 100 = 50%."
+      },
+      {
+        "q": "Mengapa penurunan lebih kecil daripada kenaikan saat kembali?",
+        "a": "Setiap persentase diukur terhadap nilai awal yang berbeda. Dari 50 ke 75 adalah +50%, sedangkan dari 75 kembali ke 50 adalah −33,33%."
+      },
+      {
+        "q": "Bagaimana mencari nilai awal sebelum kenaikan?",
+        "a": "Bagi nilai akhir dengan 1 ditambah persentase dalam bentuk desimal. Jika harga menjadi 120 setelah naik 20%, harga awalnya 120 ÷ 1,2 = 100. Pilih opsi persentase terbalik di kalkulator."
+      }
+    ],
+    "adLabel": "Iklan"
+  },
+  "reviews": {
+    "meta": {
+      "title": "Ulasan – Kalkulator Persentase Kenaikan",
+      "description": "Baca pendapat pengunjung tentang kalkulator ini dan tulis ulasan Anda sendiri. Ulasan diperiksa dulu sebelum dipublikasikan."
+    },
+    "h1": "Ulasan",
+    "intro": "Ceritakan bagaimana kalkulator ini membantu Anda. Setiap ulasan dibaca oleh seseorang sebelum tampil di halaman ini.",
+    "listTitle": "Kata pengunjung",
+    "empty": "Belum ada ulasan. Jadilah yang pertama menulis.",
+    "formTitle": "Tulis ulasan",
+    "nameLabel": "Nama atau nama panggilan",
+    "nameHelp": "2 sampai 40 karakter. Mohon jangan menulis alamat email Anda.",
+    "ratingLabel": "Penilaian Anda",
+    "starsLabel": "{n} dari 5 bintang",
+    "bodyLabel": "Ulasan Anda",
+    "bodyHelp": "20 sampai 500 karakter. Tautan tidak diperbolehkan.",
+    "counter": "{n} / 500 karakter",
+    "submit": "Kirim ulasan",
+    "sending": "Mengirim…",
+    "success": "Terima kasih! Ulasan Anda sudah kami terima dan akan tampil setelah diperiksa.",
+    "notice": "Ulasan diperiksa sebelum dipublikasikan. Kami menyimpan nama, penilaian, isi ulasan, dan hash satu arah dari alamat IP Anda untuk mencegah spam. Lihat kebijakan privasi.",
+    "errors": {
+      "invalid": "Ada yang salah pada formulir. Periksa isian Anda lalu coba lagi.",
+      "name": "Masukkan nama sepanjang 2 sampai 40 karakter.",
+      "body": "Ulasan harus terdiri dari 20 sampai 500 karakter.",
+      "rating": "Pilih penilaian 1 sampai 5 bintang.",
+      "links": "Tautan tidak diperbolehkan dalam ulasan.",
+      "spam": "Ulasan ini terlihat seperti spam sehingga tidak dikirim. Tulislah pengalaman Anda sendiri.",
+      "profanity": "Mohon gunakan bahasa yang sopan, lalu coba lagi.",
+      "turnstile": "Kami tidak dapat memastikan bahwa Anda manusia. Silakan coba lagi.",
+      "rate": "Anda baru saja mengirim beberapa ulasan. Silakan coba lagi nanti.",
+      "duplicate": "Ulasan ini sudah pernah diterima.",
+      "tooFast": "Itu sangat cepat. Tunggu sebentar lalu kirim lagi.",
+      "server": "Maaf, ulasan belum bisa disimpan saat ini. Silakan coba lagi nanti.",
+      "network": "Koneksi bermasalah. Periksa internet Anda lalu coba lagi."
+    }
+  }
+}
