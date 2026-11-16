@@ -1,10 +1,23 @@
 {
-  "meta": { "home": {
-    "title": "Calculadora de aumento porcentual – Gratis y con pasos",
-    "description": "Calcula el aumento porcentual entre dos números, o la disminución, la variación, la diferencia y el porcentaje inverso. Gratis, con fórmula y solución paso a paso."
-  } },
-  "site": { "name": "Calculadora de aumento porcentual", "skip": "Ir a la calculadora", "home": "Inicio", "ad": "Publicidad", "language": "Idioma",
-    "banner": { "text": "¿Ver esta página en {language}?", "go": "Cambiar", "dismiss": "No, gracias" } },
+  "meta": {
+    "home": {
+      "title": "Calculadora de aumento porcentual – Gratis y con pasos",
+      "description": "Calcula el aumento porcentual entre dos números, o la disminución, la variación, la diferencia y el porcentaje inverso. Gratis, con fórmula y solución paso a paso."
+    }
+  },
+  "site": {
+    "name": "Calculadora de aumento porcentual",
+    "skip": "Ir a la calculadora",
+    "home": "Inicio",
+    "ad": "Publicidad",
+    "language": "Idioma",
+    "banner": {
+      "text": "¿Ver esta página en {language}?",
+      "go": "Cambiar",
+      "dismiss": "No, gracias"
+    },
+    "reviews": "Reseñas"
+  },
   "calc": {
     "heading": "Calculadora de porcentajes",
     "modeLabel": "¿Qué quieres calcular?",
@@ -18,23 +31,54 @@
       "difference": "Diferencia porcentual entre dos números"
     },
     "fields": {
-      "increase": ["Valor inicial", "Valor final"],
-      "decrease": ["Valor inicial", "Valor final"],
-      "increaseBy": ["Número", "Aumentar en (%)"],
-      "decreaseBy": ["Número", "Reducir en (%)"],
-      "reverseIncrease": ["Valor tras el aumento", "Aumento aplicado (%)"],
-      "reverseDecrease": ["Valor tras la reducción", "Reducción aplicada (%)"],
-      "difference": ["Primer número", "Segundo número"]
+      "increase": [
+        "Valor inicial",
+        "Valor final"
+      ],
+      "decrease": [
+        "Valor inicial",
+        "Valor final"
+      ],
+      "increaseBy": [
+        "Número",
+        "Aumentar en (%)"
+      ],
+      "decreaseBy": [
+        "Número",
+        "Reducir en (%)"
+      ],
+      "reverseIncrease": [
+        "Valor tras el aumento",
+        "Aumento aplicado (%)"
+      ],
+      "reverseDecrease": [
+        "Valor tras la reducción",
+        "Reducción aplicada (%)"
+      ],
+      "difference": [
+        "Primer número",
+        "Segundo número"
+      ]
     },
-    "buttons": { "reset": "Borrar", "copy": "Copiar resultado", "copied": "Copiado", "copyFailed": "No se pudo copiar. Selecciona el resultado y cópialo a mano." },
+    "buttons": {
+      "reset": "Borrar",
+      "copy": "Copiar resultado",
+      "copied": "Copiado",
+      "copyFailed": "No se pudo copiar. Selecciona el resultado y cópialo a mano."
+    },
     "hint": "Introduce los dos números para ver el resultado, la fórmula y los pasos.",
     "resultLabel": "Resultado",
     "formulaLabel": "Fórmula",
     "stepsLabel": "Solución paso a paso",
     "noteNegative": "El valor inicial es negativo, así que el cálculo divide entre su valor absoluto. Interpreta el resultado con cuidado.",
     "headline": {
-      "increase": "{pct}\u00a0%", "decrease": "{pct}\u00a0%", "increaseBy": "{value}", "decreaseBy": "{value}",
-      "reverseIncrease": "{value}", "reverseDecrease": "{value}", "difference": "{pct}\u00a0%"
+      "increase": "{pct}\u00a0%",
+      "decrease": "{pct}\u00a0%",
+      "increaseBy": "{value}",
+      "decreaseBy": "{value}",
+      "reverseIncrease": "{value}",
+      "reverseDecrease": "{value}",
+      "difference": "{pct}\u00a0%"
     },
     "sentence": {
       "up": "De {old} a {new} hay un aumento del {abs}\u00a0%.",
@@ -119,28 +163,110 @@
     ],
     "examplesTitle": "Ejemplos resueltos",
     "examples": [
-      { "title": "Sube un precio", "body": "Unas zapatillas cuestan 80\u00a0€ y pasan a costar 100\u00a0€. El aumento es 100 − 80 = 20\u00a0€. Después, 20 ÷ 80 = 0,25 y 0,25 × 100 = 25\u00a0%. El precio ha subido un 25\u00a0%." },
-      { "title": "Una subida de sueldo", "body": "Tu sueldo mensual pasa de 1.800\u00a0€ a 1.980\u00a0€. El aumento es de 180\u00a0€. Después, 180 ÷ 1.800 = 0,1, así que la subida es del 10\u00a0%." },
-      { "title": "Visitas a una web", "body": "Un blog tuvo 1.200 visitas el mes pasado y 1.830 este mes. El aumento es de 630. Después, 630 ÷ 1.200 = 0,525, así que el tráfico creció un 52,5\u00a0%." },
-      { "title": "Una disminución", "body": "Un móvil baja de 250\u00a0€ a 200\u00a0€. La variación es 200 − 250 = −50\u00a0€. Después, −50 ÷ 250 = −0,2, es decir, −20\u00a0%. El precio cayó un 20\u00a0%." },
-      { "title": "Aumentar un número en un porcentaje", "body": "Para sumar un 15\u00a0% a 60, calcula primero el 15\u00a0% de 60: 60 × 0,15 = 9. Después súmalo: 60 + 9 = 69. También puedes hacerlo en un solo paso: 60 × 1,15 = 69." }
+      {
+        "title": "Sube un precio",
+        "body": "Unas zapatillas cuestan 80\u00a0€ y pasan a costar 100\u00a0€. El aumento es 100 − 80 = 20\u00a0€. Después, 20 ÷ 80 = 0,25 y 0,25 × 100 = 25\u00a0%. El precio ha subido un 25\u00a0%."
+      },
+      {
+        "title": "Una subida de sueldo",
+        "body": "Tu sueldo mensual pasa de 1.800\u00a0€ a 1.980\u00a0€. El aumento es de 180\u00a0€. Después, 180 ÷ 1.800 = 0,1, así que la subida es del 10\u00a0%."
+      },
+      {
+        "title": "Visitas a una web",
+        "body": "Un blog tuvo 1.200 visitas el mes pasado y 1.830 este mes. El aumento es de 630. Después, 630 ÷ 1.200 = 0,525, así que el tráfico creció un 52,5\u00a0%."
+      },
+      {
+        "title": "Una disminución",
+        "body": "Un móvil baja de 250\u00a0€ a 200\u00a0€. La variación es 200 − 250 = −50\u00a0€. Después, −50 ÷ 250 = −0,2, es decir, −20\u00a0%. El precio cayó un 20\u00a0%."
+      },
+      {
+        "title": "Aumentar un número en un porcentaje",
+        "body": "Para sumar un 15\u00a0% a 60, calcula primero el 15\u00a0% de 60: 60 × 0,15 = 9. Después súmalo: 60 + 9 = 69. También puedes hacerlo en un solo paso: 60 × 1,15 = 69."
+      }
     ],
     "useTitle": "Dónde se usa",
     "uses": [
-      { "title": "Sueldo", "body": "Compara el sueldo antiguo con el nuevo para saber cuánto ha subido." },
-      { "title": "Precios y alquiler", "body": "Comprueba cuánto han subido un producto, el alquiler o una factura entre dos fechas." },
-      { "title": "Marketing", "body": "Mide el crecimiento de visitas, altas o ventas de un periodo al siguiente." },
-      { "title": "Crecimiento", "body": "Sigue ahorros, población, peso o cualquier cifra que cambie con el tiempo." }
+      {
+        "title": "Sueldo",
+        "body": "Compara el sueldo antiguo con el nuevo para saber cuánto ha subido."
+      },
+      {
+        "title": "Precios y alquiler",
+        "body": "Comprueba cuánto han subido un producto, el alquiler o una factura entre dos fechas."
+      },
+      {
+        "title": "Marketing",
+        "body": "Mide el crecimiento de visitas, altas o ventas de un periodo al siguiente."
+      },
+      {
+        "title": "Crecimiento",
+        "body": "Sigue ahorros, población, peso o cualquier cifra que cambie con el tiempo."
+      }
     ],
     "faqTitle": "Preguntas frecuentes",
     "faq": [
-      { "q": "¿Cómo se calcula el aumento porcentual?", "a": "Resta el valor inicial al valor final, divide el resultado entre el valor inicial y multiplica por 100. Por ejemplo, de 20 a 25: (25 − 20) ÷ 20 × 100 = 25\u00a0%." },
-      { "q": "¿Un aumento porcentual puede superar el 100\u00a0%?", "a": "Sí. Si un valor más que se duplica, el aumento supera el 100\u00a0%. De 10 a 35 el aumento es del 250\u00a0%." },
-      { "q": "¿Y si el valor inicial es cero?", "a": "El aumento porcentual no está definido, porque la fórmula divide entre el valor inicial y no se puede dividir entre cero. Esta calculadora muestra un aviso en lugar de un resultado." },
-      { "q": "¿Aumento porcentual y puntos porcentuales son lo mismo?", "a": "No. Si una tasa pasa del 4\u00a0% al 6\u00a0%, sube 2 puntos porcentuales, pero el aumento porcentual es (6 − 4) ÷ 4 × 100 = 50\u00a0%." },
-      { "q": "¿Por qué la bajada es menor que la subida de vuelta?", "a": "Cada porcentaje se mide sobre un valor de partida distinto. De 50 a 75 es +50\u00a0%, mientras que de 75 a 50 es −33,33\u00a0%." },
-      { "q": "¿Cómo hallo el valor original antes de un aumento?", "a": "Divide el valor final entre 1 más el porcentaje en decimal. Si un precio es 120 tras subir un 20\u00a0%, el original era 120 ÷ 1,2 = 100. Elige la opción de porcentaje inverso en la calculadora." }
+      {
+        "q": "¿Cómo se calcula el aumento porcentual?",
+        "a": "Resta el valor inicial al valor final, divide el resultado entre el valor inicial y multiplica por 100. Por ejemplo, de 20 a 25: (25 − 20) ÷ 20 × 100 = 25\u00a0%."
+      },
+      {
+        "q": "¿Un aumento porcentual puede superar el 100\u00a0%?",
+        "a": "Sí. Si un valor más que se duplica, el aumento supera el 100\u00a0%. De 10 a 35 el aumento es del 250\u00a0%."
+      },
+      {
+        "q": "¿Y si el valor inicial es cero?",
+        "a": "El aumento porcentual no está definido, porque la fórmula divide entre el valor inicial y no se puede dividir entre cero. Esta calculadora muestra un aviso en lugar de un resultado."
+      },
+      {
+        "q": "¿Aumento porcentual y puntos porcentuales son lo mismo?",
+        "a": "No. Si una tasa pasa del 4\u00a0% al 6\u00a0%, sube 2 puntos porcentuales, pero el aumento porcentual es (6 − 4) ÷ 4 × 100 = 50\u00a0%."
+      },
+      {
+        "q": "¿Por qué la bajada es menor que la subida de vuelta?",
+        "a": "Cada porcentaje se mide sobre un valor de partida distinto. De 50 a 75 es +50\u00a0%, mientras que de 75 a 50 es −33,33\u00a0%."
+      },
+      {
+        "q": "¿Cómo hallo el valor original antes de un aumento?",
+        "a": "Divide el valor final entre 1 más el porcentaje en decimal. Si un precio es 120 tras subir un 20\u00a0%, el original era 120 ÷ 1,2 = 100. Elige la opción de porcentaje inverso en la calculadora."
+      }
     ],
     "adLabel": "Publicidad"
+  },
+  "reviews": {
+    "meta": {
+      "title": "Reseñas – Calculadora de aumento porcentual",
+      "description": "Lee lo que opinan los visitantes de la calculadora y comparte tu propia reseña. Las reseñas se revisan antes de publicarse."
+    },
+    "h1": "Reseñas",
+    "intro": "Cuéntanos cómo te ha funcionado la calculadora. Una persona lee cada reseña antes de que aparezca en esta página.",
+    "listTitle": "Lo que dicen los visitantes",
+    "empty": "Todavía no hay reseñas. Sé la primera persona en escribir una.",
+    "formTitle": "Escribe una reseña",
+    "nameLabel": "Nombre o apodo",
+    "nameHelp": "De 2 a 40 caracteres. Por favor, no escribas tu correo electrónico.",
+    "ratingLabel": "Tu valoración",
+    "starsLabel": "{n} de 5 estrellas",
+    "bodyLabel": "Tu reseña",
+    "bodyHelp": "De 20 a 500 caracteres. No se permiten enlaces.",
+    "counter": "{n} / 500 caracteres",
+    "submit": "Enviar reseña",
+    "sending": "Enviando…",
+    "success": "¡Gracias! Hemos recibido tu reseña y aparecerá cuando la hayamos revisado.",
+    "notice": "Revisamos las reseñas antes de publicarlas. Guardamos tu nombre, la valoración, el texto y una huella irreversible de tu dirección IP para evitar el spam. Consulta la política de privacidad.",
+    "errors": {
+      "invalid": "Hay algún problema en el formulario. Revisa los datos e inténtalo de nuevo.",
+      "name": "Escribe un nombre de 2 a 40 caracteres.",
+      "body": "Tu reseña debe tener entre 20 y 500 caracteres.",
+      "rating": "Elige una valoración de 1 a 5 estrellas.",
+      "links": "No se permiten enlaces en las reseñas.",
+      "spam": "Esta reseña parece spam, así que no se ha enviado. Escribe sobre tu propia experiencia.",
+      "profanity": "Usa un lenguaje respetuoso e inténtalo de nuevo.",
+      "turnstile": "No hemos podido confirmar que eres una persona. Inténtalo de nuevo.",
+      "rate": "Has enviado varias reseñas hace poco. Inténtalo más tarde.",
+      "duplicate": "Esta reseña ya se había recibido.",
+      "tooFast": "Ha sido muy rápido. Espera un momento y vuelve a enviarla.",
+      "server": "Lo sentimos, no se ha podido guardar la reseña ahora. Inténtalo más tarde.",
+      "network": "Problema de conexión. Comprueba tu internet e inténtalo de nuevo."
+    }
   }
 }

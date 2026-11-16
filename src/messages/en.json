@@ -15,7 +15,8 @@
       "text": "View this page in {language}?",
       "go": "Switch",
       "dismiss": "No thanks"
-    }
+    },
+    "reviews": "Reviews"
   },
   "calc": {
     "heading": "Percentage calculator",
@@ -230,5 +231,42 @@
       }
     ],
     "adLabel": "Advertisement"
+  },
+  "reviews": {
+    "meta": {
+      "title": "Reviews – Percentage Increase Calculator",
+      "description": "Read what visitors say about the Percentage Increase Calculator, and share your own review. Reviews are checked before they are published."
+    },
+    "h1": "Reviews",
+    "intro": "Tell us how the calculator worked for you. A person reads every review before it appears on this page.",
+    "listTitle": "What visitors say",
+    "empty": "No reviews yet. Be the first to write one.",
+    "formTitle": "Write a review",
+    "nameLabel": "Name or nickname",
+    "nameHelp": "2 to 40 characters. Please do not use your email address.",
+    "ratingLabel": "Your rating",
+    "starsLabel": "{n} out of 5 stars",
+    "bodyLabel": "Your review",
+    "bodyHelp": "20 to 500 characters. Links are not allowed.",
+    "counter": "{n} / 500 characters",
+    "submit": "Submit review",
+    "sending": "Sending…",
+    "success": "Thank you! Your review was received and will appear after it has been checked.",
+    "notice": "Reviews are checked before they appear. We store your name, rating, review text and a one-way hash of your IP address to prevent spam. See the privacy policy.",
+    "errors": {
+      "invalid": "Something is wrong with the form. Please check your entries and try again.",
+      "name": "Please enter a name of 2 to 40 characters.",
+      "body": "Your review must be 20 to 500 characters long.",
+      "rating": "Please choose a rating from 1 to 5 stars.",
+      "links": "Links are not allowed in reviews.",
+      "spam": "This review looks like spam, so it was not sent. Please write about your own experience.",
+      "profanity": "Please keep the language respectful and try again.",
+      "turnstile": "We could not confirm that you are human. Please try again.",
+      "rate": "You have sent several reviews recently. Please try again later.",
+      "duplicate": "This review has already been received.",
+      "tooFast": "That was very quick. Please wait a moment and send it again.",
+      "server": "Sorry, the review could not be saved right now. Please try again later.",
+      "network": "Connection problem. Please check your internet and try again."
+    }
   }
 }

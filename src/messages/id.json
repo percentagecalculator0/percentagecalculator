@@ -1,10 +1,23 @@
 {
-  "meta": { "home": {
-    "title": "Kalkulator Persentase Kenaikan – Gratis, dengan Langkah",
-    "description": "Hitung persentase kenaikan antara dua angka, juga penurunan, perubahan, selisih, dan persentase terbalik. Gratis, lengkap dengan rumus dan langkah penyelesaian."
-  } },
-  "site": { "name": "Kalkulator Persentase Kenaikan", "skip": "Langsung ke kalkulator", "home": "Beranda", "ad": "Iklan", "language": "Bahasa",
-    "banner": { "text": "Lihat halaman ini dalam {language}?", "go": "Ganti", "dismiss": "Tidak, terima kasih" } },
+  "meta": {
+    "home": {
+      "title": "Kalkulator Persentase Kenaikan – Gratis, dengan Langkah",
+      "description": "Hitung persentase kenaikan antara dua angka, juga penurunan, perubahan, selisih, dan persentase terbalik. Gratis, lengkap dengan rumus dan langkah penyelesaian."
+    }
+  },
+  "site": {
+    "name": "Kalkulator Persentase Kenaikan",
+    "skip": "Langsung ke kalkulator",
+    "home": "Beranda",
+    "ad": "Iklan",
+    "language": "Bahasa",
+    "banner": {
+      "text": "Lihat halaman ini dalam {language}?",
+      "go": "Ganti",
+      "dismiss": "Tidak, terima kasih"
+    },
+    "reviews": "Ulasan"
+  },
   "calc": {
     "heading": "Kalkulator persentase",
     "modeLabel": "Apa yang ingin Anda hitung?",
@@ -18,23 +31,54 @@
       "difference": "Persentase selisih antara dua angka"
     },
     "fields": {
-      "increase": ["Nilai lama", "Nilai baru"],
-      "decrease": ["Nilai lama", "Nilai baru"],
-      "increaseBy": ["Angka", "Naik sebesar (%)"],
-      "decreaseBy": ["Angka", "Turun sebesar (%)"],
-      "reverseIncrease": ["Nilai setelah kenaikan", "Kenaikan yang diterapkan (%)"],
-      "reverseDecrease": ["Nilai setelah penurunan", "Penurunan yang diterapkan (%)"],
-      "difference": ["Angka pertama", "Angka kedua"]
+      "increase": [
+        "Nilai lama",
+        "Nilai baru"
+      ],
+      "decrease": [
+        "Nilai lama",
+        "Nilai baru"
+      ],
+      "increaseBy": [
+        "Angka",
+        "Naik sebesar (%)"
+      ],
+      "decreaseBy": [
+        "Angka",
+        "Turun sebesar (%)"
+      ],
+      "reverseIncrease": [
+        "Nilai setelah kenaikan",
+        "Kenaikan yang diterapkan (%)"
+      ],
+      "reverseDecrease": [
+        "Nilai setelah penurunan",
+        "Penurunan yang diterapkan (%)"
+      ],
+      "difference": [
+        "Angka pertama",
+        "Angka kedua"
+      ]
     },
-    "buttons": { "reset": "Reset", "copy": "Salin hasil", "copied": "Tersalin", "copyFailed": "Tidak bisa menyalin. Pilih hasilnya lalu salin secara manual." },
+    "buttons": {
+      "reset": "Reset",
+      "copy": "Salin hasil",
+      "copied": "Tersalin",
+      "copyFailed": "Tidak bisa menyalin. Pilih hasilnya lalu salin secara manual."
+    },
     "hint": "Masukkan kedua angka untuk melihat hasil, rumus, dan langkah-langkahnya.",
     "resultLabel": "Hasil",
     "formulaLabel": "Rumus",
     "stepsLabel": "Penyelesaian langkah demi langkah",
     "noteNegative": "Nilai lama bernilai negatif, jadi perhitungan membagi dengan nilai mutlaknya. Baca hasilnya dengan hati-hati.",
     "headline": {
-      "increase": "{pct}%", "decrease": "{pct}%", "increaseBy": "{value}", "decreaseBy": "{value}",
-      "reverseIncrease": "{value}", "reverseDecrease": "{value}", "difference": "{pct}%"
+      "increase": "{pct}%",
+      "decrease": "{pct}%",
+      "increaseBy": "{value}",
+      "decreaseBy": "{value}",
+      "reverseIncrease": "{value}",
+      "reverseDecrease": "{value}",
+      "difference": "{pct}%"
     },
     "sentence": {
       "up": "Dari {old} menjadi {new} berarti naik {abs}%.",
@@ -119,28 +163,110 @@
     ],
     "examplesTitle": "Contoh soal dan penyelesaian",
     "examples": [
-      { "title": "Harga naik", "body": "Sepasang sepatu seharga Rp800.000 naik menjadi Rp1.000.000. Kenaikannya 1.000.000 − 800.000 = Rp200.000. Lalu 200.000 ÷ 800.000 = 0,25 dan 0,25 × 100 = 25%. Harganya naik 25%." },
-      { "title": "Kenaikan gaji", "body": "Gaji Anda naik dari Rp4.000.000 menjadi Rp4.400.000. Kenaikannya Rp400.000. Lalu 400.000 ÷ 4.000.000 = 0,1, jadi gaji naik 10%." },
-      { "title": "Pengunjung situs", "body": "Sebuah blog dikunjungi 1.200 orang bulan lalu dan 1.830 orang bulan ini. Kenaikannya 630. Lalu 630 ÷ 1.200 = 0,525, jadi lalu lintas situs tumbuh 52,5%." },
-      { "title": "Sebuah penurunan", "body": "Harga ponsel turun dari Rp2.500.000 menjadi Rp2.000.000 saat diskon. Perubahannya 2.000.000 − 2.500.000 = −Rp500.000. Lalu −500.000 ÷ 2.500.000 = −0,2, yaitu −20%. Harganya turun 20%." },
-      { "title": "Menaikkan angka sebesar persentase tertentu", "body": "Untuk menambah 15% pada 60, cari dulu 15% dari 60: 60 × 0,15 = 9. Lalu tambahkan: 60 + 9 = 69. Bisa juga sekali jalan: 60 × 1,15 = 69." }
+      {
+        "title": "Harga naik",
+        "body": "Sepasang sepatu seharga Rp800.000 naik menjadi Rp1.000.000. Kenaikannya 1.000.000 − 800.000 = Rp200.000. Lalu 200.000 ÷ 800.000 = 0,25 dan 0,25 × 100 = 25%. Harganya naik 25%."
+      },
+      {
+        "title": "Kenaikan gaji",
+        "body": "Gaji Anda naik dari Rp4.000.000 menjadi Rp4.400.000. Kenaikannya Rp400.000. Lalu 400.000 ÷ 4.000.000 = 0,1, jadi gaji naik 10%."
+      },
+      {
+        "title": "Pengunjung situs",
+        "body": "Sebuah blog dikunjungi 1.200 orang bulan lalu dan 1.830 orang bulan ini. Kenaikannya 630. Lalu 630 ÷ 1.200 = 0,525, jadi lalu lintas situs tumbuh 52,5%."
+      },
+      {
+        "title": "Sebuah penurunan",
+        "body": "Harga ponsel turun dari Rp2.500.000 menjadi Rp2.000.000 saat diskon. Perubahannya 2.000.000 − 2.500.000 = −Rp500.000. Lalu −500.000 ÷ 2.500.000 = −0,2, yaitu −20%. Harganya turun 20%."
+      },
+      {
+        "title": "Menaikkan angka sebesar persentase tertentu",
+        "body": "Untuk menambah 15% pada 60, cari dulu 15% dari 60: 60 × 0,15 = 9. Lalu tambahkan: 60 + 9 = 69. Bisa juga sekali jalan: 60 × 1,15 = 69."
+      }
     ],
     "useTitle": "Untuk apa digunakan",
     "uses": [
-      { "title": "Gaji", "body": "Bandingkan gaji lama dan baru untuk melihat besar kenaikannya." },
-      { "title": "Harga dan sewa", "body": "Cek seberapa naik harga barang, uang sewa, atau tagihan antara dua tanggal." },
-      { "title": "Pemasaran", "body": "Ukur pertumbuhan kunjungan, pendaftar, atau penjualan dari satu periode ke periode berikutnya." },
-      { "title": "Pertumbuhan", "body": "Pantau tabungan, jumlah penduduk, berat badan, atau angka apa pun yang berubah seiring waktu." }
+      {
+        "title": "Gaji",
+        "body": "Bandingkan gaji lama dan baru untuk melihat besar kenaikannya."
+      },
+      {
+        "title": "Harga dan sewa",
+        "body": "Cek seberapa naik harga barang, uang sewa, atau tagihan antara dua tanggal."
+      },
+      {
+        "title": "Pemasaran",
+        "body": "Ukur pertumbuhan kunjungan, pendaftar, atau penjualan dari satu periode ke periode berikutnya."
+      },
+      {
+        "title": "Pertumbuhan",
+        "body": "Pantau tabungan, jumlah penduduk, berat badan, atau angka apa pun yang berubah seiring waktu."
+      }
     ],
     "faqTitle": "Pertanyaan yang sering diajukan",
     "faq": [
-      { "q": "Bagaimana cara menghitung persentase kenaikan?", "a": "Kurangi nilai lama dari nilai baru, bagi hasilnya dengan nilai lama, lalu kalikan 100. Misalnya dari 20 ke 25: (25 − 20) ÷ 20 × 100 = 25%." },
-      { "q": "Bisakah persentase kenaikan lebih dari 100%?", "a": "Bisa. Jika sebuah nilai naik lebih dari dua kali lipat, kenaikannya di atas 100%. Dari 10 ke 35, kenaikannya 250%." },
-      { "q": "Bagaimana jika nilai lama adalah nol?", "a": "Persentase kenaikan tidak terdefinisi, karena rumusnya membagi dengan nilai lama dan pembagian dengan nol tidak mungkin dilakukan. Kalkulator ini menampilkan pesan, bukan hasil." },
-      { "q": "Apakah persentase sama dengan poin persentase?", "a": "Tidak. Jika suku bunga naik dari 4% ke 6%, kenaikannya 2 poin persentase, tetapi persentase kenaikannya adalah (6 − 4) ÷ 4 × 100 = 50%." },
-      { "q": "Mengapa penurunan lebih kecil daripada kenaikan saat kembali?", "a": "Setiap persentase diukur terhadap nilai awal yang berbeda. Dari 50 ke 75 adalah +50%, sedangkan dari 75 kembali ke 50 adalah −33,33%." },
-      { "q": "Bagaimana mencari nilai awal sebelum kenaikan?", "a": "Bagi nilai akhir dengan 1 ditambah persentase dalam bentuk desimal. Jika harga menjadi 120 setelah naik 20%, harga awalnya 120 ÷ 1,2 = 100. Pilih opsi persentase terbalik di kalkulator." }
+      {
+        "q": "Bagaimana cara menghitung persentase kenaikan?",
+        "a": "Kurangi nilai lama dari nilai baru, bagi hasilnya dengan nilai lama, lalu kalikan 100. Misalnya dari 20 ke 25: (25 − 20) ÷ 20 × 100 = 25%."
+      },
+      {
+        "q": "Bisakah persentase kenaikan lebih dari 100%?",
+        "a": "Bisa. Jika sebuah nilai naik lebih dari dua kali lipat, kenaikannya di atas 100%. Dari 10 ke 35, kenaikannya 250%."
+      },
+      {
+        "q": "Bagaimana jika nilai lama adalah nol?",
+        "a": "Persentase kenaikan tidak terdefinisi, karena rumusnya membagi dengan nilai lama dan pembagian dengan nol tidak mungkin dilakukan. Kalkulator ini menampilkan pesan, bukan hasil."
+      },
+      {
+        "q": "Apakah persentase sama dengan poin persentase?",
+        "a": "Tidak. Jika suku bunga naik dari 4% ke 6%, kenaikannya 2 poin persentase, tetapi persentase kenaikannya adalah (6 − 4) ÷ 4 × 100 = 50%."
+      },
+      {
+        "q": "Mengapa penurunan lebih kecil daripada kenaikan saat kembali?",
+        "a": "Setiap persentase diukur terhadap nilai awal yang berbeda. Dari 50 ke 75 adalah +50%, sedangkan dari 75 kembali ke 50 adalah −33,33%."
+      },
+      {
+        "q": "Bagaimana mencari nilai awal sebelum kenaikan?",
+        "a": "Bagi nilai akhir dengan 1 ditambah persentase dalam bentuk desimal. Jika harga menjadi 120 setelah naik 20%, harga awalnya 120 ÷ 1,2 = 100. Pilih opsi persentase terbalik di kalkulator."
+      }
     ],
     "adLabel": "Iklan"
+  },
+  "reviews": {
+    "meta": {
+      "title": "Ulasan – Kalkulator Persentase Kenaikan",
+      "description": "Baca pendapat pengunjung tentang kalkulator ini dan tulis ulasan Anda sendiri. Ulasan diperiksa dulu sebelum dipublikasikan."
+    },
+    "h1": "Ulasan",
+    "intro": "Ceritakan bagaimana kalkulator ini membantu Anda. Setiap ulasan dibaca oleh seseorang sebelum tampil di halaman ini.",
+    "listTitle": "Kata pengunjung",
+    "empty": "Belum ada ulasan. Jadilah yang pertama menulis.",
+    "formTitle": "Tulis ulasan",
+    "nameLabel": "Nama atau nama panggilan",
+    "nameHelp": "2 sampai 40 karakter. Mohon jangan menulis alamat email Anda.",
+    "ratingLabel": "Penilaian Anda",
+    "starsLabel": "{n} dari 5 bintang",
+    "bodyLabel": "Ulasan Anda",
+    "bodyHelp": "20 sampai 500 karakter. Tautan tidak diperbolehkan.",
+    "counter": "{n} / 500 karakter",
+    "submit": "Kirim ulasan",
+    "sending": "Mengirim…",
+    "success": "Terima kasih! Ulasan Anda sudah kami terima dan akan tampil setelah diperiksa.",
+    "notice": "Ulasan diperiksa sebelum dipublikasikan. Kami menyimpan nama, penilaian, isi ulasan, dan hash satu arah dari alamat IP Anda untuk mencegah spam. Lihat kebijakan privasi.",
+    "errors": {
+      "invalid": "Ada yang salah pada formulir. Periksa isian Anda lalu coba lagi.",
+      "name": "Masukkan nama sepanjang 2 sampai 40 karakter.",
+      "body": "Ulasan harus terdiri dari 20 sampai 500 karakter.",
+      "rating": "Pilih penilaian 1 sampai 5 bintang.",
+      "links": "Tautan tidak diperbolehkan dalam ulasan.",
+      "spam": "Ulasan ini terlihat seperti spam sehingga tidak dikirim. Tulislah pengalaman Anda sendiri.",
+      "profanity": "Mohon gunakan bahasa yang sopan, lalu coba lagi.",
+      "turnstile": "Kami tidak dapat memastikan bahwa Anda manusia. Silakan coba lagi.",
+      "rate": "Anda baru saja mengirim beberapa ulasan. Silakan coba lagi nanti.",
+      "duplicate": "Ulasan ini sudah pernah diterima.",
+      "tooFast": "Itu sangat cepat. Tunggu sebentar lalu kirim lagi.",
+      "server": "Maaf, ulasan belum bisa disimpan saat ini. Silakan coba lagi nanti.",
+      "network": "Koneksi bermasalah. Periksa internet Anda lalu coba lagi."
+    }
   }
 }

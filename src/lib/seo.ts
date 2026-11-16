@@ -3,7 +3,7 @@ import { LOCALES, DEFAULT_LOCALE } from "@/lib/i18n/config";
 export const SITE = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://percentageincreasecalculator.net").replace(/\/$/, "");
 
 /** Pages that exist in every language. "" is the homepage. Stage 5 adds the rest. */
-export const PAGES: string[] = [""];
+export const PAGES: string[] = ["", "/reviews"];
 export const LAST_MOD = "2026-11-15"; // update when content changes
 
 export const urlFor = (code: string, path = "") => `${SITE}/${code}${path}`;

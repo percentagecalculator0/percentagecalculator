@@ -1,10 +1,23 @@
 {
-  "meta": { "home": {
-    "title": "Calculateur d’augmentation en pourcentage – Gratuit, avec étapes",
-    "description": "Calculez l’augmentation en pourcentage entre deux nombres, ainsi que la baisse, la variation, l’écart et le pourcentage inverse. Gratuit, avec formule et résolution pas à pas."
-  } },
-  "site": { "name": "Calculateur d’augmentation en pourcentage", "skip": "Aller au calculateur", "home": "Accueil", "ad": "Publicité", "language": "Langue",
-    "banner": { "text": "Voir cette page en {language} ?", "go": "Changer", "dismiss": "Non merci" } },
+  "meta": {
+    "home": {
+      "title": "Calculateur d’augmentation en pourcentage – Gratuit, avec étapes",
+      "description": "Calculez l’augmentation en pourcentage entre deux nombres, ainsi que la baisse, la variation, l’écart et le pourcentage inverse. Gratuit, avec formule et résolution pas à pas."
+    }
+  },
+  "site": {
+    "name": "Calculateur d’augmentation en pourcentage",
+    "skip": "Aller au calculateur",
+    "home": "Accueil",
+    "ad": "Publicité",
+    "language": "Langue",
+    "banner": {
+      "text": "Voir cette page en {language} ?",
+      "go": "Changer",
+      "dismiss": "Non merci"
+    },
+    "reviews": "Avis"
+  },
   "calc": {
     "heading": "Calculateur de pourcentages",
     "modeLabel": "Que voulez-vous calculer ?",
@@ -18,23 +31,54 @@
       "difference": "Écart en pourcentage entre deux nombres"
     },
     "fields": {
-      "increase": ["Valeur de départ", "Valeur d’arrivée"],
-      "decrease": ["Valeur de départ", "Valeur d’arrivée"],
-      "increaseBy": ["Nombre", "Augmenter de (%)"],
-      "decreaseBy": ["Nombre", "Diminuer de (%)"],
-      "reverseIncrease": ["Valeur après l’augmentation", "Augmentation appliquée (%)"],
-      "reverseDecrease": ["Valeur après la baisse", "Baisse appliquée (%)"],
-      "difference": ["Premier nombre", "Deuxième nombre"]
+      "increase": [
+        "Valeur de départ",
+        "Valeur d’arrivée"
+      ],
+      "decrease": [
+        "Valeur de départ",
+        "Valeur d’arrivée"
+      ],
+      "increaseBy": [
+        "Nombre",
+        "Augmenter de (%)"
+      ],
+      "decreaseBy": [
+        "Nombre",
+        "Diminuer de (%)"
+      ],
+      "reverseIncrease": [
+        "Valeur après l’augmentation",
+        "Augmentation appliquée (%)"
+      ],
+      "reverseDecrease": [
+        "Valeur après la baisse",
+        "Baisse appliquée (%)"
+      ],
+      "difference": [
+        "Premier nombre",
+        "Deuxième nombre"
+      ]
     },
-    "buttons": { "reset": "Effacer", "copy": "Copier le résultat", "copied": "Copié", "copyFailed": "Copie impossible. Sélectionnez le résultat et copiez-le à la main." },
+    "buttons": {
+      "reset": "Effacer",
+      "copy": "Copier le résultat",
+      "copied": "Copié",
+      "copyFailed": "Copie impossible. Sélectionnez le résultat et copiez-le à la main."
+    },
     "hint": "Saisissez les deux nombres pour voir le résultat, la formule et les étapes.",
     "resultLabel": "Résultat",
     "formulaLabel": "Formule",
     "stepsLabel": "Résolution pas à pas",
     "noteNegative": "La valeur de départ est négative : le calcul divise donc par sa valeur absolue. Interprétez le résultat avec prudence.",
     "headline": {
-      "increase": "{pct}\u00a0%", "decrease": "{pct}\u00a0%", "increaseBy": "{value}", "decreaseBy": "{value}",
-      "reverseIncrease": "{value}", "reverseDecrease": "{value}", "difference": "{pct}\u00a0%"
+      "increase": "{pct}\u00a0%",
+      "decrease": "{pct}\u00a0%",
+      "increaseBy": "{value}",
+      "decreaseBy": "{value}",
+      "reverseIncrease": "{value}",
+      "reverseDecrease": "{value}",
+      "difference": "{pct}\u00a0%"
     },
     "sentence": {
       "up": "De {old} à {new}, c’est une augmentation de {abs}\u00a0%.",
@@ -119,28 +163,110 @@
     ],
     "examplesTitle": "Exemples détaillés",
     "examples": [
-      { "title": "Un prix qui monte", "body": "Une paire de baskets coûte 80\u00a0€ puis passe à 100\u00a0€. L’augmentation est de 100 − 80 = 20\u00a0€. Ensuite, 20 ÷ 80 = 0,25 et 0,25 × 100 = 25\u00a0%. Le prix a augmenté de 25\u00a0%." },
-      { "title": "Une augmentation de salaire", "body": "Votre salaire passe de 2\u00a0000\u00a0€ à 2\u00a0200\u00a0€. L’augmentation est de 200\u00a0€. Ensuite, 200 ÷ 2\u00a0000 = 0,1 : la hausse est de 10\u00a0%." },
-      { "title": "Visites d’un site", "body": "Un blog a reçu 1\u00a0200 visites le mois dernier et 1\u00a0830 ce mois-ci. L’augmentation est de 630. Ensuite, 630 ÷ 1\u00a0200 = 0,525 : le trafic a progressé de 52,5\u00a0%." },
-      { "title": "Une baisse", "body": "Un téléphone passe de 250\u00a0€ à 200\u00a0€ pendant les soldes. La variation est de 200 − 250 = −50\u00a0€. Ensuite, −50 ÷ 250 = −0,2, soit −20\u00a0%. Le prix a baissé de 20\u00a0%." },
-      { "title": "Augmenter un nombre d’un pourcentage", "body": "Pour ajouter 15\u00a0% à 60, calculez d’abord 15\u00a0% de 60 : 60 × 0,15 = 9. Ajoutez ensuite : 60 + 9 = 69. En une seule étape : 60 × 1,15 = 69." }
+      {
+        "title": "Un prix qui monte",
+        "body": "Une paire de baskets coûte 80\u00a0€ puis passe à 100\u00a0€. L’augmentation est de 100 − 80 = 20\u00a0€. Ensuite, 20 ÷ 80 = 0,25 et 0,25 × 100 = 25\u00a0%. Le prix a augmenté de 25\u00a0%."
+      },
+      {
+        "title": "Une augmentation de salaire",
+        "body": "Votre salaire passe de 2\u00a0000\u00a0€ à 2\u00a0200\u00a0€. L’augmentation est de 200\u00a0€. Ensuite, 200 ÷ 2\u00a0000 = 0,1 : la hausse est de 10\u00a0%."
+      },
+      {
+        "title": "Visites d’un site",
+        "body": "Un blog a reçu 1\u00a0200 visites le mois dernier et 1\u00a0830 ce mois-ci. L’augmentation est de 630. Ensuite, 630 ÷ 1\u00a0200 = 0,525 : le trafic a progressé de 52,5\u00a0%."
+      },
+      {
+        "title": "Une baisse",
+        "body": "Un téléphone passe de 250\u00a0€ à 200\u00a0€ pendant les soldes. La variation est de 200 − 250 = −50\u00a0€. Ensuite, −50 ÷ 250 = −0,2, soit −20\u00a0%. Le prix a baissé de 20\u00a0%."
+      },
+      {
+        "title": "Augmenter un nombre d’un pourcentage",
+        "body": "Pour ajouter 15\u00a0% à 60, calculez d’abord 15\u00a0% de 60 : 60 × 0,15 = 9. Ajoutez ensuite : 60 + 9 = 69. En une seule étape : 60 × 1,15 = 69."
+      }
     ],
     "useTitle": "Où l’utiliser",
     "uses": [
-      { "title": "Salaire", "body": "Comparez l’ancien et le nouveau salaire pour mesurer l’ampleur d’une augmentation." },
-      { "title": "Prix et loyer", "body": "Vérifiez de combien un produit, un loyer ou une facture a augmenté entre deux dates." },
-      { "title": "Marketing", "body": "Mesurez la croissance des visites, des inscriptions ou des ventes d’une période à l’autre." },
-      { "title": "Croissance", "body": "Suivez une épargne, une population, un poids ou tout chiffre qui évolue dans le temps." }
+      {
+        "title": "Salaire",
+        "body": "Comparez l’ancien et le nouveau salaire pour mesurer l’ampleur d’une augmentation."
+      },
+      {
+        "title": "Prix et loyer",
+        "body": "Vérifiez de combien un produit, un loyer ou une facture a augmenté entre deux dates."
+      },
+      {
+        "title": "Marketing",
+        "body": "Mesurez la croissance des visites, des inscriptions ou des ventes d’une période à l’autre."
+      },
+      {
+        "title": "Croissance",
+        "body": "Suivez une épargne, une population, un poids ou tout chiffre qui évolue dans le temps."
+      }
     ],
     "faqTitle": "Questions fréquentes",
     "faq": [
-      { "q": "Comment calculer une augmentation en pourcentage ?", "a": "Soustrayez la valeur de départ de la valeur d’arrivée, divisez le résultat par la valeur de départ, puis multipliez par 100. Par exemple, de 20 à 25 : (25 − 20) ÷ 20 × 100 = 25\u00a0%." },
-      { "q": "Une augmentation peut-elle dépasser 100\u00a0% ?", "a": "Oui. Si une valeur fait plus que doubler, l’augmentation dépasse 100\u00a0%. De 10 à 35, la hausse est de 250\u00a0%." },
-      { "q": "Que se passe-t-il si la valeur de départ est zéro ?", "a": "L’augmentation en pourcentage n’est pas définie, car la formule divise par la valeur de départ et on ne peut pas diviser par zéro. Ce calculateur affiche un message au lieu d’un résultat." },
-      { "q": "Pourcentage et points de pourcentage, est-ce pareil ?", "a": "Non. Si un taux passe de 4\u00a0% à 6\u00a0%, il gagne 2 points de pourcentage, mais l’augmentation en pourcentage est de (6 − 4) ÷ 4 × 100 = 50\u00a0%." },
-      { "q": "Pourquoi la baisse est-elle plus faible que la hausse inverse ?", "a": "Chaque pourcentage se calcule sur une base différente. De 50 à 75, c’est +50\u00a0%, alors que de 75 à 50, c’est −33,33\u00a0%." },
-      { "q": "Comment retrouver la valeur avant une augmentation ?", "a": "Divisez la valeur finale par 1 plus le pourcentage en décimal. Si un prix vaut 120 après une hausse de 20\u00a0%, le prix initial était 120 ÷ 1,2 = 100. Choisissez l’option de pourcentage inverse dans le calculateur." }
+      {
+        "q": "Comment calculer une augmentation en pourcentage ?",
+        "a": "Soustrayez la valeur de départ de la valeur d’arrivée, divisez le résultat par la valeur de départ, puis multipliez par 100. Par exemple, de 20 à 25 : (25 − 20) ÷ 20 × 100 = 25\u00a0%."
+      },
+      {
+        "q": "Une augmentation peut-elle dépasser 100\u00a0% ?",
+        "a": "Oui. Si une valeur fait plus que doubler, l’augmentation dépasse 100\u00a0%. De 10 à 35, la hausse est de 250\u00a0%."
+      },
+      {
+        "q": "Que se passe-t-il si la valeur de départ est zéro ?",
+        "a": "L’augmentation en pourcentage n’est pas définie, car la formule divise par la valeur de départ et on ne peut pas diviser par zéro. Ce calculateur affiche un message au lieu d’un résultat."
+      },
+      {
+        "q": "Pourcentage et points de pourcentage, est-ce pareil ?",
+        "a": "Non. Si un taux passe de 4\u00a0% à 6\u00a0%, il gagne 2 points de pourcentage, mais l’augmentation en pourcentage est de (6 − 4) ÷ 4 × 100 = 50\u00a0%."
+      },
+      {
+        "q": "Pourquoi la baisse est-elle plus faible que la hausse inverse ?",
+        "a": "Chaque pourcentage se calcule sur une base différente. De 50 à 75, c’est +50\u00a0%, alors que de 75 à 50, c’est −33,33\u00a0%."
+      },
+      {
+        "q": "Comment retrouver la valeur avant une augmentation ?",
+        "a": "Divisez la valeur finale par 1 plus le pourcentage en décimal. Si un prix vaut 120 après une hausse de 20\u00a0%, le prix initial était 120 ÷ 1,2 = 100. Choisissez l’option de pourcentage inverse dans le calculateur."
+      }
     ],
     "adLabel": "Publicité"
+  },
+  "reviews": {
+    "meta": {
+      "title": "Avis – Calculateur d’augmentation en pourcentage",
+      "description": "Lisez l’opinion des visiteurs sur le calculateur et partagez votre propre avis. Les avis sont vérifiés avant publication."
+    },
+    "h1": "Avis",
+    "intro": "Dites-nous comment le calculateur vous a servi. Chaque avis est lu par une personne avant d’apparaître sur cette page.",
+    "listTitle": "Ce que disent les visiteurs",
+    "empty": "Aucun avis pour le moment. Soyez le premier à en écrire un.",
+    "formTitle": "Écrire un avis",
+    "nameLabel": "Nom ou pseudo",
+    "nameHelp": "De 2 à 40 caractères. Merci de ne pas saisir votre adresse e-mail.",
+    "ratingLabel": "Votre note",
+    "starsLabel": "{n} étoiles sur 5",
+    "bodyLabel": "Votre avis",
+    "bodyHelp": "De 20 à 500 caractères. Les liens ne sont pas autorisés.",
+    "counter": "{n} / 500 caractères",
+    "submit": "Envoyer l’avis",
+    "sending": "Envoi en cours…",
+    "success": "Merci ! Votre avis a bien été reçu et apparaîtra après vérification.",
+    "notice": "Les avis sont vérifiés avant publication. Nous conservons votre nom, votre note, le texte et une empreinte irréversible de votre adresse IP pour lutter contre le spam. Consultez la politique de confidentialité.",
+    "errors": {
+      "invalid": "Le formulaire contient une erreur. Vérifiez vos saisies et réessayez.",
+      "name": "Saisissez un nom de 2 à 40 caractères.",
+      "body": "Votre avis doit contenir entre 20 et 500 caractères.",
+      "rating": "Choisissez une note de 1 à 5 étoiles.",
+      "links": "Les liens ne sont pas autorisés dans les avis.",
+      "spam": "Cet avis ressemble à du spam et n’a pas été envoyé. Parlez de votre propre expérience.",
+      "profanity": "Merci d’utiliser un langage respectueux, puis de réessayer.",
+      "turnstile": "Nous n’avons pas pu confirmer que vous êtes humain. Veuillez réessayer.",
+      "rate": "Vous avez envoyé plusieurs avis récemment. Réessayez plus tard.",
+      "duplicate": "Cet avis a déjà été reçu.",
+      "tooFast": "C’était très rapide. Patientez un instant, puis renvoyez-le.",
+      "server": "Désolé, l’avis n’a pas pu être enregistré pour le moment. Réessayez plus tard.",
+      "network": "Problème de connexion. Vérifiez votre connexion internet et réessayez."
+    }
   }
 }
