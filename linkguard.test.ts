@@ -101,8 +101,8 @@ describe("validateReview", () => {
     expect(validateReview({ ...ok, name: "A" })).toMatchObject({ ok: false, code: "name" });
   });
   it("accepts exactly 20 and 500 characters", () => {
-    expect(validateReview({ ...ok, body: "x".repeat(10) + " " + "y".repeat(9) }).ok).toBe(true);
-    expect(validateReview({ ...ok, body: ("word ".repeat(100)).trim().slice(0, 500) }).ok).toBe(true);
+    expect(validateReview({ ...ok, body: "abcdefghij klmnopqrs" }).ok).toBe(true);
+    expect(validateReview({ ...ok, body: ("abcd ".repeat(100)).trim() + "x" }).ok).toBe(true);
   });
   it("rejects links in the name and in the body", () => {
     expect(validateReview({ ...ok, name: "shop.xyz" })).toMatchObject({ ok: false, code: "links" });

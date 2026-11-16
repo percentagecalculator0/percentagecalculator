@@ -40,13 +40,14 @@ function mapConfusables(s: string): string {
 }
 
 /** Normalised copy used only for detection (never stored or shown). */
-function normalise(input: string, keepCase: boolean): string {
+function normalise(input: string, keepCase: boolean, mapLookalikes = true): string {
   let s = input.normalize("NFKD");
-  s = s.replace(/\p{M}/gu, "");                                              // accents and combining marks
+  // accents on Latin/Cyrillic/Greek letters (keeps Devanagari/Arabic vowel signs intact)
+  s = s.replace(/([\p{Script=Latin}\p{Script=Cyrillic}\p{Script=Greek}])\p{M}+/gu, "$1");
   s = s.replace(/[\p{Cf}\u00ad\u180e\u200b-\u200f\u2060-\u2064\ufeff]/gu, ""); // zero-width, bidi and other invisible chars
   if (!keepCase) s = s.toLowerCase();
   s = s.replace(/[\u3002\uff61\u2024\u2027\ufe52\u00b7\u2219\u22c5\u06d4]/g, "."); // look-alike dots
-  s = mapConfusables(s);
+  if (mapLookalikes) s = mapConfusables(s);
   s = s.replace(/\s+/g, " ");
   const flags = "giu";
   // "[dot]", "(dot)", "[.]" -> "."
@@ -71,10 +72,10 @@ const RULES: Array<[string, RegExp]> = [
   ["domain-generic", new RegExp(String.raw`[\p{L}\p{N}][\p{L}\p{N}-]*\s{0,2}[.,]\s{0,2}(?:${TLD_GENERIC})(?![\p{L}\p{N}])`, "u")],
   ["domain-spaced", new RegExp(String.raw`[a-z0-9]\s+\.\s*(?:${TLD_ALL})(?![\p{L}\p{N}])`, "u")],
   ["leet-tld", /[a-z0-9]\s*\.\s*(?:c0m|0rg|n3t|c0)(?![a-z0-9])/],
-  ["idn-tld", new RegExp(String.raw`[\p{L}\p{N}][\p{L}\p{N}-]*\.(?:${IDN_TLD})(?![\p{L}\p{N}])`, "u")],
   ["shortener", /(?:^|[^a-z0-9])(?:t\s*\.\s*co|t\s*\.\s*me|wa\s*\.\s*me|wa\s*\.\s*link|fb\s*\.\s*me|goo\s*\.\s*gl|ow\s*\.\s*ly|is\s*\.\s*gd|buff\s*\.\s*ly|bit\s*\.\s*ly|lnkd\s*\.\s*in|youtu\s*\.\s*be|rb\s*\.\s*gy|tiny\s*\.\s*cc|cutt\s*\.\s*ly|shorturl\s*\.\s*at|rebrand\s*\.\s*ly)(?:$|[^a-z0-9])/],
   ["markdown-link", /\]\s*\(/],
 ];
+const IDN_RE = new RegExp(String.raw`[\p{L}\p{N}][\p{L}\p{N}-]*\.(?:${IDN_TLD})(?![\p{L}\p{N}])`, "u");
 // Run on the case-preserving copy: "tool.It" is a sentence with a missing space, "tool.it" is a domain.
 const CC_DOMAIN = /[\p{L}\p{N}][\p{L}\p{N}-]+\.(?:[a-z]{2}|[A-Z]{2})(?![\p{L}\p{N}])/u;
 // Letters-only view, for "t i n y u r l" or "dotcom" written without spaces.
@@ -88,6 +89,7 @@ export function containsLink(raw: string): GuardResult {
 
   const d = normalise(raw, false);
   for (const [reason, re] of RULES) if (re.test(d)) return { blocked: true, reason };
+  if (IDN_RE.test(normalise(raw, false, false))) return { blocked: true, reason: "idn-tld" };
   if (CC_DOMAIN.test(normalise(raw, true))) return { blocked: true, reason: "domain-cc" };
   if (COMPACT.test(d.replace(/[^\p{L}\p{N}]/gu, ""))) return { blocked: true, reason: "compact" };
   return { blocked: false };
