@@ -28,6 +28,9 @@ export default function SiteFooter() {
         <div>
           <p className="footer-title">Site</p>
           <ul>
+            <li>
+              <Link href="/">Home</Link>
+            </li>
             {LEGAL_NAV.map((i) => (
               <li key={i.href}>
                 <Link href={i.href}>{i.label}</Link>
