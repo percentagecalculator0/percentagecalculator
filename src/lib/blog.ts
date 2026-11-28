@@ -561,11 +561,11 @@ const calculatorsHub: PageDef = {
   slug: "calculators",
   kind: "hub",
   navLabel: "Calculators",
-  title: "All Percentage Calculators (Free, With Steps)",
+  title: "All Calculators: Percentage, Growth and Salary Tools",
   description:
-    "Every percentage calculator in one place: increase, decrease, change, difference, percentage of a number, reverse percentage, growth rate and salary raise.",
-  h1: "Percentage calculators",
-  lead: "The homepage is our percentage increase calculator. These nine others cover decreases, shares, reverse percentages, growth and pay. Each one shows the formula and every step of the working.",
+    "Every calculator on this site in one place: percentage increase, decrease, change, difference, reverse percentage, growth rate and salary raise.",
+  h1: "All Calculators",
+  lead: "Every calculator on this site in one place. The homepage is the percentage increase calculator, and these nine others cover decreases, shares, reverse percentages, growth and pay. Each one shows the formula and every step of the working.",
   sections: [
     {
       h2: "Which calculator do I need?",
