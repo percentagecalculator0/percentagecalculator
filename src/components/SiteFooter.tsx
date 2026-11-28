@@ -50,7 +50,7 @@ export default function SiteFooter() {
       </div>
       <div className="wrap footer-base">
         <p>
-          © {new Date().getFullYear()} {SITE.domain}. {SITE.tagline}
+          © {new Date().getFullYear()} {SITE.domain}
         </p>
       </div>
     </footer>
